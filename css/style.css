@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none; /* 공공기관은 있어야 함 */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: '맑은 고딕';
+  color: rgb(68, 68, 68);
+  word-break: keep-all;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* 공통 클래스 */
+.inner {
+  width: 1400px;
+  margin: 0 auto;
+}
+/* 상단 */
+.header {
+  border-bottom: 1px solid #d5d6dd;
+}
+.header .inner {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: block;
+  width: 200px;
+  height: 64px;
+  background: url('../images/logo_header.png') no-repeat center;
+}
+.gnb {
+  width: 690px;
+  margin-right: 85px;
+}
+.gnb > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.gnb > ul > li {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.gnb > ul > li > a {
+  padding: 0 40px;
+  letter-spacing: -1px;
+}
+.member-list {
+  width: 280px;
+}
+.member-list > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.member-list > ul > li {
+  font-size: 1.3rem;
+}
+.member-list > ul > li > a {}
+.header-searchBtn {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url('../images/img_srch.png') no-repeat center;
+}
+.header-sitemap {
+  display: block;
+  width: 29px;
+  height: 24px;
+  background: url('../images/img_sitemap.png') no-repeat center;
+}
+/* 검색창 */
+.search-area {
+  height: 126px;
+}
+.search-area .inner {
+  height: 66px;
+}
+.search {
+  position: relative;
+  width: 837px;
+  height: 66px;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+}
+.search-text {
+  width: 728px;
+  height: 66px;
+  border: 2px solid rgb(9, 169, 88);
+  border-radius: 2rem 0 0 0;
+  padding: 0 30px;
+  font-size: 28px;
+  color: rgb(9, 169, 88);
+}
+.searchBtn {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  width: 126px;
+  height: 66px;
+  background: rgb(9, 169, 88) url('../images/btn_srch.png') no-repeat center;
+  background-position: contain;
+  border: 0;
+  border-radius: 2rem 0 2rem 0;
+  
+}
+/* 퀵메뉴 */
+/* 메인 배너 */
+/* sns, 정보, 이슈 */
+/* 카테고리 */
+/* 커뮤니티 */
+/* 홍보, 안내 */
+/* 운영 서비스 */
+/* 사이트맵 */
+/* 하단 */
