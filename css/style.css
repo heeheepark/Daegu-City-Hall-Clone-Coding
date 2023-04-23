@@ -38,6 +38,21 @@ body {
   width: 1400px;
   margin: 0 auto;
 }
+.subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: rgb(68, 68, 68);
+}
+.more-btn {
+  font-size: 14px;
+}
+.more-btn::after {
+  content: "+";
+  font-size: 14px;
+  margin-left: 5px;
+
+}
 /* 상단 */
 .header {
   border-bottom: 1px solid #d5d6dd;
@@ -276,6 +291,193 @@ body {
 }
 /* 메인 배너 */
 /* sns, 정보, 이슈 */
+.issue {}
+.issue .inner {
+  display: flex;
+  align-items: start;
+}
+.issue-subtitle {}
+.issue-left {}
+.issue-left-top {
+  margin: 0px 0px 15px;
+}
+.issue-left-bottom {
+  width: 324px;
+  height: 242px;
+  background: url('../images/bg_sns.jpg');
+  position: relative;
+}
+.sns-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 36px;
+}
+.sns-icons li {
+  margin: 0 4px;
+}
+.sns-icon {
+  display: block;
+  width: 42px;
+  height: 42px;
+}
+.sns-icon1 {
+  background: url('../images/ico_sns.png') no-repeat center;
+  background-size: cover;
+  background-position: 0px;
+}
+.sns-icon2 {
+  background: url('../images/ico_sns.png') no-repeat center;
+  background-size: cover;
+  background-position: -42px;
+}
+.sns-icon3 {
+  background: url('../images/ico_sns.png') no-repeat center;
+  background-size: cover;
+  background-position: -84px;
+}
+.sns-icon4 {
+  background: url('../images/ico_sns.png') no-repeat center;
+  background-size: cover;
+  background-position: -126px;
+}
+.sns-icon5 {
+  background: url('../images/ico_sns.png') no-repeat center;
+  background-size: cover;
+  background-position: -168px;
+}
+.sns-icon6 {
+  background: url('../images/ico_sns.png') no-repeat center;
+  background-size: cover;
+  background-position: -210px;
+}
+.issue-mid {
+  margin-left: 30px;
+}
+.issue-mid-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 15px;
+}
+.issue-mid-bottom {
+  width: 344px;
+  height: 242px;
+  border: 1px solid rgb(213, 214, 221);
+}
+.covid-data {
+  width: 100%;
+  height: 100%;
+  padding: 22px 24px;
+  background-color: rgb(251, 251, 251);
+}
+.covid-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(213, 214, 221)
+}
+.covid-top-left {}
+.covid-top-left img {}
+.covid-top-left span {
+  display: block;
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.covid-top-right {}
+.covid-top-right a {
+  display: block;
+  width: 75px;
+  height: 61px;
+  background: url('../images/covid_btn.png');
+}
+.covid-bottom {
+  display: flex;
+  margin: 20px 0 10px;
+}
+.covid-bottom-left {
+  width: 147px;
+  padding: 0px 5px 10px;
+  border-right: 1px solid rgb(213, 214, 221);
+}
+.covid-subtitle {
+  display: block;
+  height: 35.5px;
+  margin-bottom: 20px;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19.5px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+}
+.covid-new {
+  background: rgb(220, 99, 115);
+}
+.covid-num {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: rgb(68, 68, 68);
+  text-align: center;
+}
+.covid-bottom-right {
+  width: 147px;
+  padding: 0px 5px 10px;
+}
+.covid-sum {
+  background: rgb(52, 144, 57);
+}
+.issue-right {
+  width: 681px;
+  height: 242px;
+  margin-left: 17px;
+}
+.issue-right-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 15px;
+}
+.issue-right-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.hot-issue-left {
+  display: block;
+  width: 322px;
+  height: 242px;
+  border: 1px solid rgb(213, 214, 221);
+  box-sizing: content-box;
+}
+.hot-issue-right {
+  display: block;
+  width: 322px;
+  height: 242px;
+  border: 1px solid rgb(213, 214, 221);
+  box-sizing: content-box;
+}
+.hot-issue-img1 {
+  width: 100%;
+}
+.hot-issue-img2 {
+  width: 100%;
+}
+.hot-issue-title {
+  font-size: 16px;
+  line-height: 21px;
+  padding: 17px 10px 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* 카테고리 */
 .category {
   background: rgb(234, 235, 237);
@@ -287,6 +489,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
+  margin-top: 60px 
 }
 .category-list li {}
 .category-list li a {
