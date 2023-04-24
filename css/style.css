@@ -43,6 +43,7 @@ body {
   font-weight: 700;
   letter-spacing: -2px;
   color: rgb(68, 68, 68);
+  line-height: 26px;
 }
 .more-btn {
   font-size: 14px;
@@ -51,7 +52,31 @@ body {
   content: "+";
   font-size: 14px;
   margin-left: 5px;
-
+}
+.left-btn {
+  width: 31px;
+  height: 31px;
+  background: #fff url('../images/sp_main.png') no-repeat center;
+  background-position: -112px 0px;
+  border: none;
+  cursor: pointer;
+}
+.pause-btn {
+  width: 31px;
+  height: 31px;
+  background: #fff url('../images/sp_main.png') no-repeat center;
+  background-position: -147px 0px;
+  border: none;
+  cursor: pointer;
+}
+.right-btn {
+  width: 31px;
+  height: 31px;
+  background: #fff url('../images/sp_main.png') no-repeat center;
+  background-position: -217px 0px;
+  border: none;
+  cursor: pointer;
+  margin-left: 2px;
 }
 /* 상단 */
 .header {
@@ -377,7 +402,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgb(213, 214, 221)
+  border-bottom: 1px solid rgb(213, 214, 221);
 }
 .covid-top-left {}
 .covid-top-left img {}
@@ -550,6 +575,89 @@ body {
 }
 /* 커뮤니티 */
 /* 홍보, 안내 */
+.info {
+}
+.info .inner {
+  height: 100%;
+  margin-top: 55px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+}
+.info-left {
+  width: 683px;
+  height: 100%;;
+}
+.youtube-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.info-title {}
+.youtube-bottom {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+.youtube-img {
+  width: 322px;
+  height: 243px;
+  border: 1px solid rgb(213, 214, 221);
+}
+.youtube-img img {
+  width: 100%;
+}
+.youtube-title {
+  font-size: 16px;
+  line-height: 20.8px;
+  text-align: center;
+  padding: 17px 10px 0;
+  color:rgb(68, 68, 68);
+}
+.info-right {
+  width: 683px;
+  margin-left: 35px;
+}
+.info-zone-top {
+  height: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+}
+.pages {
+  display: inline-block;
+  color: rgb(68, 68, 68);
+  font-size: 15px;
+  line-height: 31px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+}
+.info-zone-bottom {
+  width: 100%;
+}
+.sw-info {}
+.swiper-wrapper {
+  /* display: flex;
+  justify-content: space-between; */
+}
+.info-img {
+  display: block;
+  width: 325px;
+  height: 243px;
+}
+.info-img img {
+  width: 100%;
+  height: 100%;
+}
+
 /* 운영 서비스 */
 /* 사이트맵 */
 /* 하단 */

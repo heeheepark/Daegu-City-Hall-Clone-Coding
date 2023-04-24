@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>대구광역시</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -270,7 +275,78 @@
     <!-- // 커뮤니티 -->
     <!-- 홍보, 안내 -->
     <section class="info">
-      <div class="inner"></div>
+      <div class="inner">
+        <div class="info-left">
+          <div class="youtube-top">
+            <h3 class="subtitle info-title">대구광역시공식유투브</h3>
+            <a href="#" class="more-btn">더보기</a>
+          </div>
+          <div class="youtube-bottom">
+            <a href="#" class="youtube-img">
+              <img src="images/youtube1.jpeg" alt="유투브썸네일1">
+              <p class="youtube-title">신천이 이렇게 바뀝니다.</p>
+            </a>
+            <a href="#" class="youtube-img">
+              <img src="images/youtube2.jpeg" alt="유투브썸네일2">
+              <p class="youtube-title">[플라워대구] 활짝 피는 대구</p>
+            </a>
+          </div>
+        </div>
+        <div class="info-right">
+          <div class="info-zone-top">
+            <h3 class="subtitle">알림존</h3>
+            <div class="buttons">
+              <button class="left-btn info-prev-btn"></button>
+              <span class="pages">1/24</span>
+              <button class="pause-btn"></button>
+              <button class="right-btn info-next-btn"></button>
+            </div>
+          </div>
+          <div class="info-zone-bottom">
+            <div class="swiper sw-info">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="info-img">
+                    <img src="images/info_img1.jpeg" alt="시민참여형 의제발굴 이벤트">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="info-img">
+                    <img src="images/info_img2.jpeg" alt="시내버스 노선체계 시민의견">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="info-img">
+                    <img src="images/info_img3.jpeg" alt="여성대상 후보자 공모">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="info-img">
+                    <img src="images/info_img4.jpeg" alt="스마일 국제사진 공모전">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <script>
+              const swiper = new Swiper('.swiper', {
+              // Optional parameters
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 34,
+                autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+                },
+                loop: true,
+                navigation: {
+                  nextEl: ".info-next-btn",
+                  prevEl: ".info-prev-btn",
+                },
+              })
+            </script>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- // 홍보 -->
     <!-- 운영 서비스 -->
