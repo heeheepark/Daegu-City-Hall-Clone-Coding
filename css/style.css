@@ -574,6 +574,127 @@ body {
   letter-spacing: -1px;
 }
 /* 커뮤니티 */
+.community .inner {
+  height: 276px;
+  margin-top: 60px;
+  display: flex;
+}
+.community-left {}
+.community-menu {}
+.community-menu li {
+  margin-bottom: 4px;
+}
+.community-menu li:last-child {
+  margin-bottom: 0;
+}
+.community-menu li a {
+  position: relative;
+  display: block;
+  width: 210px;
+  height: 52px;
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 52px;
+  letter-spacing: -2px;
+  font-weight: 600;
+  background-color: rgb(227, 237, 244);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: rgb(68, 68, 68);
+}
+.community-menu li:first-child a {
+  width: 225px;
+  color: #fff;
+  background: rgb(23, 105, 171);
+  margin-right: 15px;
+}
+.community-menu li a::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+}
+.community-menu li:first-child a::after {
+  top: 19px;
+  right: 20px;
+  width: 14px;
+  height: 14px;
+  background: url('../images/sp_main.png') no-repeat center;
+  background-position: -136px -35px;
+}
+.community-right {}
+.community-list {
+  height: 100%;;
+  display: flex;
+}
+.community-list li {
+  height: 100%;
+  margin-left: 58px;
+}
+.community-list li a {
+  display: block;
+  width: 232px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  border-bottom: 1px solid #000;
+}
+.list-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-date {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgb(234, 235, 237);
+  color: rgb(68, 68, 68);
+  font-size: 14px;
+  line-height: 65px;
+  font-weight: 600;
+}
+.list-department {
+  font-size: 15px;
+  line-height: 19px;
+  color: rgb(68, 68, 68);
+}
+.list-mid {
+  margin-top: 15px;
+}
+.list-title {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -2px;
+  font-weight: 700;
+  color: rgb(68, 68, 68);
+  height: 84px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.list-bottom {}
+.list-contents {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -1px;
+  color: rgb(68, 68, 68);
+  margin-top: 18px;
+  height: 72px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 /* 홍보, 안내 */
 .info {
 }
