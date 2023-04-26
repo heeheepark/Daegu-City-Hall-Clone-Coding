@@ -1,483 +1,655 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>대구광역시</title>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="wrap">
-    <!-- 상단 -->
-    <header class="header">
-      <div class="inner">
-        <h1>
-          <a href="#" class="logo"></a>
-        </h1>
-        <div class="gnb">
-          <ul>
-            <li><a href="#">민원·소통·참여</a></li>
-            <li><a href="#">정보공개</a></li>
-            <li><a href="#">대구소개</a></li>
-            <li><a href="#">분야별정보</a></li>
-          </ul>
-        </div>
-        <div class="member-list">
-          <ul>
-            <li><a href="#" class="login-btn">로그인</a></li>
-            <li><a href="#" class="language">LANGUAGE</a></li>
-            <li><a href="#" class="header-searchBtn"></a></li>
-            <li><a href="#" class="header-sitemap"></a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <!-- // 상단 -->
-    <!-- 검색창 -->
-    <section class="search-area">
-      <div class="inner">
-        <form class="search" action="">
-          <input type="text" class="search-text" maxlength="255">
-          <button class="searchBtn"></button>
-        </form>
-      </div>
-    </section>
-    <!-- // 검색창 -->
-    <!-- 퀵메뉴 -->
-    <aside class="quick-menu">
-      <div class="inner">
-        <ul class="quick-menu-list">
-          <li>
-            <a href="#">
-              <span class="qm-icon qm-icon1"></span>
-              <span class="qm-text">코로나19현황</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="qm-icon qm-icon2"></span>
-              <span class="qm-text">상담사 뚜봇</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="qm-icon qm-icon3"></span>
-              <span class="qm-text">청사안내</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="qm-icon qm-icon4"></span>
-              <span class="qm-text">행정조직도</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="qm-icon qm-icon5"></span>
-              <span class="qm-text">대구시정뉴스</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="qm-icon qm-icon6"></span>
-              <span class="qm-text">대구광역시<br>뉴스룸</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="qm-icon qm-icon7"></span>
-              <span class="qm-text">두드리소</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="qm-icon qm-icon8"></span>
-              <span class="qm-text">토크대구</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="qm-icon qm-icon9"></span>
-              <span class="qm-text">통합예약</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="qm-icon qm-icon10"></span>
-              <span class="qm-text">금주의 퀴즈</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    <!-- // 퀵메뉴 -->
-    <!-- 메인 배너 -->
-    <section class="main-banner">
-      <div class="inner"></div>
-    </section>
-    <!-- // 메인 배너 -->
-    <!-- sns, 정보, 이슈 -->
-    <section class="issue">
-      <div class="inner">
-        <div class="issue-left">
-          <div class="issue-left-top">
-            <h3 class="subtitle issue-subtitle">시민소통</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대구광역시</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 상단 -->
+      <header class="header">
+        <div class="inner">
+          <h1>
+            <a href="#" class="logo"></a>
+          </h1>
+          <div class="gnb">
+            <ul>
+              <li><a href="#">민원·소통·참여</a></li>
+              <li><a href="#">정보공개</a></li>
+              <li><a href="#">대구소개</a></li>
+              <li><a href="#">분야별정보</a></li>
+            </ul>
           </div>
-          <div class="issue-left-bottom">
-            <ul class="sns-icons">
+          <div class="member-list">
+            <ul>
+              <li><a href="#" class="login-btn">로그인</a></li>
+              <li><a href="#" class="language">LANGUAGE</a></li>
+              <li><a href="#" class="header-searchBtn"></a></li>
+              <li><a href="#" class="header-sitemap"></a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- // 상단 -->
+      <!-- 검색창 -->
+      <section class="search-area">
+        <div class="inner">
+          <form class="search" action="">
+            <input type="text" class="search-text" maxlength="255" />
+            <button class="searchBtn"></button>
+          </form>
+        </div>
+      </section>
+      <!-- // 검색창 -->
+      <!-- 퀵메뉴 -->
+      <aside class="quick-menu">
+        <div class="inner">
+          <ul class="quick-menu-list">
+            <li>
+              <a href="#">
+                <span class="qm-icon qm-icon1"></span>
+                <span class="qm-text">코로나19현황</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="qm-icon qm-icon2"></span>
+                <span class="qm-text">상담사 뚜봇</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="qm-icon qm-icon3"></span>
+                <span class="qm-text">청사안내</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="qm-icon qm-icon4"></span>
+                <span class="qm-text">행정조직도</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="qm-icon qm-icon5"></span>
+                <span class="qm-text">대구시정뉴스</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="qm-icon qm-icon6"></span>
+                <span class="qm-text">대구광역시<br />뉴스룸</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="qm-icon qm-icon7"></span>
+                <span class="qm-text">두드리소</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="qm-icon qm-icon8"></span>
+                <span class="qm-text">토크대구</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="qm-icon qm-icon9"></span>
+                <span class="qm-text">통합예약</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="qm-icon qm-icon10"></span>
+                <span class="qm-text">금주의 퀴즈</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- // 퀵메뉴 -->
+      <!-- 메인 배너 -->
+      <section class="main-banner">
+        <div class="inner"></div>
+      </section>
+      <!-- // 메인 배너 -->
+      <!-- sns, 정보, 이슈 -->
+      <section class="issue">
+        <div class="inner">
+          <div class="issue-left">
+            <div class="issue-left-top">
+              <h3 class="subtitle issue-subtitle">시민소통</h3>
+            </div>
+            <div class="issue-left-bottom">
+              <ul class="sns-icons">
+                <li>
+                  <a href="#" class="sns-icon sns-icon1"></a>
+                </li>
+                <li>
+                  <a href="#" class="sns-icon sns-icon2"></a>
+                </li>
+                <li>
+                  <a href="#" class="sns-icon sns-icon3"></a>
+                </li>
+                <li>
+                  <a href="#" class="sns-icon sns-icon4"></a>
+                </li>
+                <li>
+                  <a href="#" class="sns-icon sns-icon5"></a>
+                </li>
+                <li>
+                  <a href="#" class="sns-icon sns-icon6"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="issue-mid">
+            <div class="issue-mid-top">
+              <h3 class="subtitle issue-subtitle">코로나현황</h3>
+              <a href="#" class="more-btn">더보기</a>
+            </div>
+            <div class="issue-mid-bottom">
+              <div class="covid-data">
+                <div class="covid-top">
+                  <div class="covid-top-left">
+                    <img src="images/covid_title.png" alt="코로나19현황" />
+                    <span>2023.04.23. 00시 기준</span>
+                  </div>
+                  <div class="covid-top-right">
+                    <a href="#"></a>
+                  </div>
+                </div>
+                <div class="covid-bottom">
+                  <div class="covid-bottom-left">
+                    <span class="covid-subtitle covid-new">신규확진자</span>
+                    <span class="covid-num">334명</span>
+                  </div>
+                  <div class="covid-bottom-right">
+                    <span class="covid-subtitle covid-sum">누적확진자</span>
+                    <span class="covid-num">1,354,898명</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="issue-right">
+            <div class="issue-right-top">
+              <h3 class="subtitle issue-subtitle">핫이슈</h3>
+              <a href="#" class="more-btn">더보기</a>
+            </div>
+            <div class="issue-right-bottom">
+              <a href="#" class="hot-issue-left">
+                <img
+                  src="images/20230421023434191.png"
+                  alt="지구의날"
+                  class="hot-issue-img1"
+                />
+                <p class="hot-issue-title">
+                  지구에게 휴식을... 제15회 기후변화주간 운영
+                </p>
+              </a>
+              <a href="#" class="hot-issue-right">
+                <img
+                  src="images/20230419054213472.png"
+                  alt="주택지원사업"
+                  class="hot-issue-img2"
+                />
+                <p class="hot-issue-title">2023년 주택지원사업 시보조금 지원</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- // sns, 정보 -->
+      <!-- 카테고리 -->
+      <section class="category">
+        <div class="inner">
+          <ul class="category-list">
+            <li>
+              <a href="#">
+                <span class="icon icon1"></span>
+                <span class="icon-text">문화·관광·체육</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon2"></span>
+                <span class="icon-text">교통</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon3"></span>
+                <span class="icon-text">복지</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon4"></span>
+                <span class="icon-text">여성·가족·교육</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon5"></span>
+                <span class="icon-text">건강·보건·위생</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon6"></span>
+                <span class="icon-text">산업·경제</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon7"></span>
+                <span class="icon-text">환경</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon8"></span>
+                <span class="icon-text">소방·안전</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon9"></span>
+                <span class="icon-text">도시주택·건설</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon10"></span>
+                <span class="icon-text">행정·재정·세정</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- // 카테고리 -->
+      <!-- 커뮤니티 -->
+      <section class="community">
+        <div class="inner">
+          <div class="community-left">
+            <ul class="community-menu">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">보도자료</a></li>
+              <li><a href="#">시험정보</a></li>
+              <li><a href="#">고시공고</a></li>
+              <li><a href="#">공고/모집</a></li>
+            </ul>
+          </div>
+          <div class="community-right">
+            <ul class="community-list">
               <li>
-                <a href="#" class="sns-icon sns-icon1"></a>
+                <a href="#">
+                  <div class="list-top">
+                    <span class="list-date"> 04.25 </span>
+                    <span class="list-department"> 위생정책과 </span>
+                  </div>
+                  <div class="list-mid">
+                    <p class="list-title">식중독 주의 정보 알림(5월)</p>
+                  </div>
+                  <div class="list-bottom">
+                    <p class="list-contents">
+                      식중독 주의 정보 알림(5월) **세균 바이러스로 인한 식중독
+                      주의 **
+                    </p>
+                  </div>
+                </a>
               </li>
               <li>
-                <a href="#" class="sns-icon sns-icon2"></a>
+                <a href="#">
+                  <div class="list-top">
+                    <span class="list-date"> 04.25 </span>
+                    <span class="list-department"> 지능정보화담당관 </span>
+                  </div>
+                  <div class="list-mid">
+                    <p class="list-title">
+                      2023년 정보통신보조기기 보급사업 안내
+                    </p>
+                  </div>
+                  <div class="list-bottom">
+                    <p class="list-contents">
+                      2023년 정보통신보조기기 보급사업 안내 << 사업개요 >> ○
+                      지원대상 : 장애인, 상이등급 판정을 받은 국가유공자 ○
+                      지원방식 : 보조기기 가격기준 정부지원 80%와 개인부담
+                      20%(저소득층 10%) ○ 보급품목 : 시각 66개 / 지체‧뇌병변
+                      21개 / 청각‧언어 38개 등 125개 제품 ○ 선정절차 : 심사를
+                      거쳐 최종 보급대상자 결정 ○ 보급대상자 발표 : 2023. 7.
+                      19.(수) 예정
+                    </p>
+                  </div>
+                </a>
               </li>
               <li>
-                <a href="#" class="sns-icon sns-icon3"></a>
+                <a href="#">
+                  <div class="list-top">
+                    <span class="list-date"> 04.24 </span>
+                    <span class="list-department"> 일자리노동정책과 </span>
+                  </div>
+                  <div class="list-mid">
+                    <p class="list-title">
+                      ★대구시 중장년 성공취업 아카데미 5월 23일(화) 참가자
+                      모집안내(구직확인서 발급)★
+                    </p>
+                  </div>
+                  <div class="list-bottom">
+                    <p class="list-contents">
+                      ★대구시 중장년 성공취업 아카데미 5월 23일(화) 참가자
+                      모집안내(구직확인서 발급)★ 대구지역 중장년 구직자들의 큰
+                      호응 및 지역언론의 관심가운데 <중장년 성공취업 아카데미>
+                      프로그램을 시작한지 벌써 4년이 되었네요. 2020년 5월부터
+                      지금껏 매월 성황리에 운영하고 있습니다.
+                    </p>
+                  </div>
+                </a>
               </li>
               <li>
-                <a href="#" class="sns-icon sns-icon4"></a>
-              </li>
-              <li>
-                <a href="#" class="sns-icon sns-icon5"></a>
-              </li>
-              <li>
-                <a href="#" class="sns-icon sns-icon6"></a>
+                <a href="#">
+                  <div class="list-top">
+                    <span class="list-date"> 04.24 </span>
+                    <span class="list-department"> 감염병관리과 </span>
+                  </div>
+                  <div class="list-mid">
+                    <p class="list-title">엠폭스 예방 및 행동수칙 안내문</p>
+                  </div>
+                  <div class="list-bottom">
+                    <p class="list-contents">
+                      엠폭스 예방 및 행동수칙 안내문입니다. 자세한 내용은
+                      첨부파일을 참고하시기 바랍니다.
+                    </p>
+                  </div>
+                </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="issue-mid">
-          <div class="issue-mid-top">
-            <h3 class="subtitle issue-subtitle">코로나현황</h3>
-            <a href="#" class="more-btn">더보기</a>
+      </section>
+      <!-- // 커뮤니티 -->
+      <!-- 홍보, 안내 -->
+      <section class="info">
+        <div class="inner">
+          <div class="info-left">
+            <div class="youtube-top">
+              <h3 class="subtitle info-title">대구광역시공식유투브</h3>
+              <a href="#" class="more-btn">더보기</a>
+            </div>
+            <div class="youtube-bottom">
+              <a href="#" class="youtube-img">
+                <img src="images/youtube1.jpeg" alt="유투브썸네일1" />
+                <p class="youtube-title">신천이 이렇게 바뀝니다.</p>
+              </a>
+              <a href="#" class="youtube-img">
+                <img src="images/youtube2.jpeg" alt="유투브썸네일2" />
+                <p class="youtube-title">[플라워대구] 활짝 피는 대구</p>
+              </a>
+            </div>
           </div>
-          <div class="issue-mid-bottom">
-            <div class="covid-data">
-              <div class="covid-top">
-                <div class="covid-top-left">
-                  <img src="images/covid_title.png" alt="코로나19현황">
-                  <span>2023.04.23. 00시 기준</span>
-                </div>
-                <div class="covid-top-right">
-                  <a href="#"></a>
+          <div class="info-right">
+            <div class="info-zone-top">
+              <h3 class="subtitle">알림존</h3>
+              <div class="buttons">
+                <button class="left-btn info-prev-btn"></button>
+                <span class="pages">1/24</span>
+                <button class="pause-btn"></button>
+                <button class="right-btn info-next-btn"></button>
+              </div>
+            </div>
+            <div class="info-zone-bottom">
+              <div class="swiper sw-info">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="info-img">
+                      <img
+                        src="images/info_img1.jpeg"
+                        alt="시민참여형 의제발굴 이벤트"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="info-img">
+                      <img
+                        src="images/info_img2.jpeg"
+                        alt="시내버스 노선체계 시민의견"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="info-img">
+                      <img
+                        src="images/info_img3.jpeg"
+                        alt="여성대상 후보자 공모"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="info-img">
+                      <img
+                        src="images/info_img4.jpeg"
+                        alt="스마일 국제사진 공모전"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="covid-bottom">
-                <div class="covid-bottom-left">
-                  <span class="covid-subtitle covid-new">신규확진자</span>
-                  <span class="covid-num">334명</span>
-                </div>
-                <div class="covid-bottom-right">
-                  <span class="covid-subtitle covid-sum">누적확진자</span>
-                  <span class="covid-num">1,354,898명</span>
-                </div>
-              </div>
+              <script>
+                const swiper = new Swiper(".swiper", {
+                  // Optional parameters
+                  slidesPerView: 2,
+                  slidesPerGroup: 2,
+                  spaceBetween: 34,
+                  autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  },
+                  loop: true,
+                  navigation: {
+                    nextEl: ".info-next-btn",
+                    prevEl: ".info-prev-btn",
+                  },
+                });
+              </script>
             </div>
           </div>
         </div>
-        <div class="issue-right">
-          <div class="issue-right-top">
-            <h3 class="subtitle issue-subtitle">핫이슈</h3>
-            <a href="#" class="more-btn">더보기</a>
-          </div>
-          <div class="issue-right-bottom">
-            <a href="#" class="hot-issue-left">
-              <img src="images/20230421023434191.png" alt="지구의날" class="hot-issue-img1">
-              <p class="hot-issue-title">지구에게 휴식을... 제15회 기후변화주간 운영</p>
-            </a>
-            <a href="#" class="hot-issue-right">
-              <img src="images/20230419054213472.png" alt="주택지원사업" class="hot-issue-img2">
-              <p class="hot-issue-title">2023년 주택지원사업 시보조금 지원</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- // sns, 정보 -->
-    <!-- 카테고리 -->
-    <section class="category">
-      <div class="inner">
-        <ul class="category-list">
-          <li>
-            <a href="#">
-              <span class="icon icon1"></span>
-              <span class="icon-text">문화·관광·체육</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon icon2"></span>
-              <span class="icon-text">교통</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon icon3"></span>
-              <span class="icon-text">복지</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon icon4"></span>
-              <span class="icon-text">여성·가족·교육</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon icon5"></span>
-              <span class="icon-text">건강·보건·위생</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon icon6"></span>
-              <span class="icon-text">산업·경제</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon icon7"></span>
-              <span class="icon-text">환경</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon icon8"></span>
-              <span class="icon-text">소방·안전</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon icon9"></span>
-              <span class="icon-text">도시주택·건설</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon icon10"></span>
-              <span class="icon-text">행정·재정·세정</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- // 카테고리 -->
-    <!-- 커뮤니티 -->
-    <section class="community">
-      <div class="inner">
-        <div class="community-left">
-          <ul class="community-menu">
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">보도자료</a></li>
-            <li><a href="#">시험정보</a></li>
-            <li><a href="#">고시공고</a></li>
-            <li><a href="#">공고/모집</a></li>
-          </ul>
-        </div>
-        <div class="community-right">
-          <ul class="community-list">
-            <li>
-              <a href="#">
-                <div class="list-top">
-                  <span class="list-date">
-                    04.25
-                  </span>
-                  <span class="list-department">
-                    위생정책과
-                  </span>
-                </div>
-                <div class="list-mid">
-                  <p class="list-title">
-                    식중독 주의 정보 알림(5월)
-                  </p>
-                </div>
-                <div class="list-bottom">
-                  <p class="list-contents">
-                    식중독 주의 정보 알림(5월)
-                    **세균 바이러스로 인한 식중독 주의 **
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="list-top">
-                  <span class="list-date">
-                    04.25
-                  </span>
-                  <span class="list-department">
-                    지능정보화담당관
-                  </span>
-                </div>
-                <div class="list-mid">
-                  <p class="list-title">
-                    2023년 정보통신보조기기 보급사업 안내
-                  </p>
-                </div>
-                <div class="list-bottom">
-                  <p class="list-contents">
-                    2023년 정보통신보조기기 보급사업 안내
-                    << 사업개요 >>  
-                    ○ 지원대상 : 장애인, 상이등급 판정을 받은 국가유공자 
-                    ○ 지원방식 : 보조기기 가격기준 정부지원 80%와 개인부담 20%(저소득층 10%) 
-                    ○ 보급품목 : 시각 66개 / 지체‧뇌병변 21개 / 청각‧언어 38개 등 125개 제품 
-                    ○ 선정절차 : 심사를 거쳐 최종 보급대상자 결정 
-                    ○ 보급대상자 발표 : 2023. 7. 19.(수) 예정
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="list-top">
-                  <span class="list-date">
-                    04.24
-                  </span>
-                  <span class="list-department">
-                    일자리노동정책과
-                  </span>
-                </div>
-                <div class="list-mid">
-                  <p class="list-title">
-                    ★대구시 중장년 성공취업 아카데미 5월 23일(화) 참가자 모집안내(구직확인서 발급)★
-                  </p>
-                </div>
-                <div class="list-bottom">
-                  <p class="list-contents">
-                    ★대구시 중장년 성공취업 아카데미 5월 23일(화) 참가자 모집안내(구직확인서 발급)★ 
-                    대구지역 중장년 구직자들의 큰 호응 및 지역언론의 관심가운데 
-                    <중장년 성공취업 아카데미> 프로그램을 시작한지 벌써 4년이 되었네요. 
-                    2020년 5월부터 지금껏 매월 성황리에 운영하고 있습니다.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="list-top">
-                  <span class="list-date">
-                    04.24
-                  </span>
-                  <span class="list-department">
-                    감염병관리과
-                  </span>
-                </div>
-                <div class="list-mid">
-                  <p class="list-title">
-                    엠폭스 예방 및 행동수칙 안내문
-                  </p>
-                </div>
-                <div class="list-bottom">
-                  <p class="list-contents">
-                    엠폭스 예방 및 행동수칙 안내문입니다.
-                    자세한 내용은 첨부파일을 참고하시기 바랍니다.
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- // 커뮤니티 -->
-    <!-- 홍보, 안내 -->
-    <section class="info">
-      <div class="inner">
-        <div class="info-left">
-          <div class="youtube-top">
-            <h3 class="subtitle info-title">대구광역시공식유투브</h3>
-            <a href="#" class="more-btn">더보기</a>
-          </div>
-          <div class="youtube-bottom">
-            <a href="#" class="youtube-img">
-              <img src="images/youtube1.jpeg" alt="유투브썸네일1">
-              <p class="youtube-title">신천이 이렇게 바뀝니다.</p>
-            </a>
-            <a href="#" class="youtube-img">
-              <img src="images/youtube2.jpeg" alt="유투브썸네일2">
-              <p class="youtube-title">[플라워대구] 활짝 피는 대구</p>
-            </a>
-          </div>
-        </div>
-        <div class="info-right">
-          <div class="info-zone-top">
-            <h3 class="subtitle">알림존</h3>
-            <div class="buttons">
-              <button class="left-btn info-prev-btn"></button>
-              <span class="pages">1/24</span>
-              <button class="pause-btn"></button>
-              <button class="right-btn info-next-btn"></button>
-            </div>
-          </div>
-          <div class="info-zone-bottom">
-            <div class="swiper sw-info">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#" class="info-img">
-                    <img src="images/info_img1.jpeg" alt="시민참여형 의제발굴 이벤트">
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="info-img">
-                    <img src="images/info_img2.jpeg" alt="시내버스 노선체계 시민의견">
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="info-img">
-                    <img src="images/info_img3.jpeg" alt="여성대상 후보자 공모">
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="info-img">
-                    <img src="images/info_img4.jpeg" alt="스마일 국제사진 공모전">
-                  </a>
-                </div>
+      </section>
+      <!-- // 홍보 -->
+      <!-- 운영 서비스 -->
+      <section class="service">
+        <div class="inner">
+          <div class="service-left">
+            <div class="slide-title">
+              <span>대구시 운영서비스</span>
+              <div class="service-btns">
+                <button class="pause-btn"></button>
+                <button class="service-more-btn"></button>
               </div>
             </div>
-            <script>
-              const swiper = new Swiper('.swiper', {
-              // Optional parameters
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-                spaceBetween: 34,
-                autoplay: {
-                  delay: 2500,
-                  disableOnInteraction: false,
-                },
-                loop: true,
-                navigation: {
-                  nextEl: ".info-next-btn",
-                  prevEl: ".info-prev-btn",
-                },
-              })
-            </script>
+            <div class="service-slide">
+              <button class="sw-bt service-bt-prev">이전</button>
+              <button class="sw-bt service-bt-next">다음</button>
+              <div class="swiper sw-service">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="service-list">
+                      <img src="images/service1.png" alt="D-데이터허브" />
+                      <span>D-데이터허브</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img
+                        src="images/service2.png"
+                        alt="대구 서비스 인구분석"
+                      />
+                      <span>대구 서비스 인구분석</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service3.png" alt="신기술 플랫폼" />
+                      <span>신기술 플랫폼</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service4.png" alt="규제정보포털" />
+                      <span>규제정보포털</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img
+                        src="images/service5.png"
+                        alt="바른주차안내 문자서비스"
+                      />
+                      <span>바른주차안내 문자서비스</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service6.png" alt="규제개혁 신문고" />
+                      <span>규제개혁 신문고</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service7.png" alt="공무원 교육원" />
+                      <span>공무원 교육원</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img
+                        src="images/service8.png"
+                        alt="익명신고 (레드휘슬)"
+                      />
+                      <span>익명신고 (레드휘슬)</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="service-list">
+                      <img src="images/service9.png" alt="공익제보" />
+                      <span>공익제보</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service10.png" alt="자치법규" />
+                      <span>자치법규 (조례·규칙)</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img
+                        src="images/service11.png"
+                        alt="대구시 통합모니터단"
+                      />
+                      <span>대구시 통합모니터단</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img
+                        src="images/service12.png"
+                        alt="대기오염 문자알림 신청"
+                      />
+                      <span>대기오염 문자알림 신청</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service13.png" alt="대구 음악창의도시" />
+                      <span>대구 음악창의도시</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img
+                        src="images/service14.png"
+                        alt="대구시청 작은도서관"
+                      />
+                      <span>대구시청 작은도서관</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service15.png" alt="도시브랜드 웹툰" />
+                      <span>도시브랜드 웹툰</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img
+                        src="images/service16.png"
+                        alt="대구 전기차 충전소"
+                      />
+                      <span>대구 전기차 충전소</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="service-list">
+                      <img src="images/service17.png" alt="비상대피/급수시설" />
+                      <span>비상대피/ 급수시설</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service18.png" alt="주민참여예산" />
+                      <span>주민참여예산</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="service-list">
+                      <img src="images/service19.jpg" alt="서대구역세권개발" />
+                      <span>서대구역세권개발</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img
+                        src="images/service20.jpg"
+                        alt="항공사진 통합플랫폼"
+                      />
+                      <span>항공사진 통합플랫폼</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service20.jpg" alt="대구지도포털" />
+                      <span>대구지도포털</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service21.png" alt="청년안방" />
+                      <span>청년안방</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service22.png" alt="시정추진 우수부서" />
+                      <span>시정추진 우수부서</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service23.png" alt="피플人대구" />
+                      <span>피플人대구</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service24.png" alt="안심하이소" />
+                      <span>안심하이소</span>
+                    </a>
+                    <a href="#" class="service-list">
+                      <img src="images/service25.png" alt="시민건강 놀이터" />
+                      <span>시민건강 놀이터</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <script>
+                new Swiper(".sw-service", {
+                  slidesPerView: 1,
+                  autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  },
+                  loop: true,
+                  navigation: {
+                    nextEl: ".service-bt-prev",
+                    prevEl: ".service-bt-next",
+                  },
+                });
+              </script>
+            </div>
           </div>
+          <div class="service-right"></div>
         </div>
-      </div>
-    </section>
-    <!-- // 홍보 -->
-    <!-- 운영 서비스 -->
-    <section class="service">
-      <div class="inner"></div>
-    </section>
-    <!-- // 운영 서비스 -->
-    <!-- 사이트맵 -->
-    <section class="sitemap">
-      <div class="inner"></div>
-    </section>
-    <!-- // 사이트맵 -->
-    <!-- 하단 -->
-    <footer class="footer">
-      <div class="inner"></div>
-    </footer>
-    <!-- //하단 -->
-  </div>
-  
-</body>
+      </section>
+      <!-- // 운영 서비스 -->
+      <!-- 사이트맵 -->
+      <section class="sitemap">
+        <div class="inner"></div>
+      </section>
+      <!-- // 사이트맵 -->
+      <!-- 하단 -->
+      <footer class="footer">
+        <div class="inner"></div>
+      </footer>
+      <!-- //하단 -->
+    </div>
+  </body>
 </html>
