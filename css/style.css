@@ -80,7 +80,13 @@ body {
 }
 /* 상단 */
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
   border-bottom: 1px solid #d5d6dd;
+  background: #fff;
+  z-index: 999999;
 }
 .header .inner {
   height: 96px;
@@ -226,7 +232,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 999;
+  z-index: 9999999;
 }
 .quick-menu .inner {
   width: 120px;
@@ -1008,6 +1014,8 @@ body {
 }
 /* 바로가기 */
 .links {
+  border-top: 1px solid #d5d6dd;
+  margin-top: 40px;
 }
 .links .inner {
   height: 94px;
@@ -1017,6 +1025,7 @@ body {
 }
 .btns {
   width: 180px;
+  font-size: 0;
 }
 .btns > span {
   display: inline-block;
@@ -1025,6 +1034,7 @@ body {
   background: url("../images/sp_main.png") no-repeat center;
   font-size: 0;
   vertical-align: middle;
+  margin-right: 2px;
 }
 .btns span:first-child {
   background-position: -112px 0;
@@ -1044,19 +1054,19 @@ body {
 .link-swiper {
   width: 1220px;
 }
-.link-swiper .swiper-slide {
-  width: 100%;
-}
 .sw-links a {
   text-align: center;
-  width: 178px;
+  width: 180px;
   display: inline-block;
   font-size: 16px;
   line-height: 30px;
-  margin: 2px 10px;
-  padding: 10px 15px;
+  margin: 2px 8px;
+  padding: 10px 12px;
   background: rgb(235, 236, 241);
   color: rgb(68, 68, 68);
+}
+.sw-links a:last-child {
+  margin-right: 0;
 }
 .link-swiper a.shortcut::after {
   content: "";
@@ -1067,7 +1077,105 @@ body {
   background: url("../images/sp_main.png") no-repeat center;
   background-position: -209px -35px;
   vertical-align: text-bottom;
-  margin-left: 3px;
+  margin-left: 10px;
 }
 /* 사이트맵 */
+.sitemap {
+  background: rgb(28, 41, 60);
+}
+.sitemap .inner {
+  height: 60px;
+}
+.sitemap-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+.sitemap-list li {
+  width: 100%;
+  position: relative;
+  border-left: 1px solid rgb(131, 139, 151);
+}
+.sitemap-list li:last-child {
+  border-right: 1px solid rgb(131, 139, 151);
+}
+.sitemap-list li a {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  line-height: 60px;
+  padding-left: 25px;
+}
+.sitemap-list li a::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 6px);
+  width: 15px;
+  height: 12px;
+  background: url("../images/sp_main.png") no-repeat center;
+  background-position: -190px -32px;
+  vertical-align: middle;
+}
 /* 하단 */
+.footer {
+  background: rgb(235, 236, 241);
+}
+.footer .inner {
+}
+.footer-top {
+  height: 69px;
+  font-size: 0;
+  border-bottom: 1px solid rgb(213, 214, 221);
+}
+.footer-top a {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 69px;
+  letter-spacing: -1px;
+  padding: 0 10px;
+  color: rgb(68, 68, 68));
+}
+.footer-top a:first-child {
+  padding-left: 0;
+}
+.footer-top a:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 2px;
+  left: 0px;
+  top: calc(100% / 2 - 1px);
+  background: #000;
+}
+.footer-top a strong {
+  font-weight: 700;
+}
+.footer-bottom {
+  height: 99px;
+  padding: 25px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom-mid {
+  padding-right: 80px;
+}
+.footer-bottom-mid p {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 3px;
+}
+.footer-bottom-mid p:last-child {
+  color: rgb(136, 136, 136);
+  margin-bottom: 0;
+}
+.img120 {
+  margin-right: 20px;
+}
