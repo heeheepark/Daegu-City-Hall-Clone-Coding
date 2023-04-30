@@ -119,7 +119,90 @@
       <!-- // 퀵메뉴 -->
       <!-- 메인 배너 -->
       <section class="main-banner">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="main-banner-left">
+            <div class="main-btn-area">
+              <span class="btn main-prev-btn">이전</span>
+              <span class="count"><b>1</b>/3</span>
+              <span class="btn main-next-btn">다음</span>
+              <span class="main-pause-btn">정지</span>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper sw-main-left">
+                <div class="swiper-slide">
+                  <a href="#" class="banner-text">
+                    <h2 class="banner-title">
+                      대구경북신공항 특별법 국회 통과!
+                    </h2>
+                    <p>
+                      2030년 개항!<br>
+                      새로운 하늘길이 열립니다<br>
+                      세계를 향해 대구가 비상합니다<br>
+                      대구 굴기의 시작입니다</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <script>
+              new Swiper(".sw-main-left", {
+                // slidesPerView: 1,
+                // // slidesPerGroup: 1,
+              })
+            </script>
+          </div>
+          <div class="main-banner-mid">
+            <img src="images/banner1.jpeg" alt="대구경북신공항">
+          </div>
+          <div class="main-banner-right">
+            <a href="#" class="weather">
+              <img src="images/rain.png" alt="날씨-비">
+              <span class="temperature">22.6℃</span>
+              <button></button>
+              <!-- <div class="swiper sw-weather">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="weather-text">
+                      <span class="weather-list">미세먼지 <em>73</em>μg/㎥</span>
+                      <span class="weather-level">보통</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="weather-text">
+                      <span class="weather-list">오존 <em>0.062</em>ppm</span>
+                      <span class="weather-level">보통</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="weather-text">
+                      <span class="weather-list">초미세먼지</span> <em>16</em>μg/㎥</span>
+                      <span class="weather-level">보통</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <script>
+                // new Swiper('sw-weather', {
+                //   direction: 'vertical',
+                //   slidesPerView: 1,
+                //   slidesPerGroup: 1,
+                //   autoplay: {
+                //     delay: 2500,
+                //     disableOnInteraction: false,
+                //   },
+                //   loop: true,
+                // })
+              </script> -->
+            </a>
+            <div class="mayor">
+                <img src="images/img_mayor_tit1.png" alt="파워풀 대구"  class="mayor-title">
+                <div class="mayor-links">
+                  <a href="#" class="mayor-shortcuts">시장실 바로가기</a>
+                  <a href="#" class="promise-shortcuts">시민과의 약속</a>
+                </div>
+                <a href="#" class="mayor-img"><img src="images/img_mayor.png" alt="홍준표시장"></a>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- // 메인 배너 -->
       <!-- sns, 정보, 이슈 -->
