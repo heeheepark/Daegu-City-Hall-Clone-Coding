@@ -340,6 +340,8 @@ body {
   width: 186px;
   display: flex;
   align-items: center;
+  z-index: 99;
+  cursor: pointer;
 }
 .main-btn-area .btn {
   display: inline-block;
@@ -372,8 +374,7 @@ body {
 .sw-main-left {
   width: 325px;
   height: 100%;
-}
-.swiper-slide {
+  overflow: hidden;
 }
 .banner-text {
   display: block;
@@ -397,10 +398,33 @@ body {
   letter-spacing: -1px;
   margin-top: 30px;
 }
-.main-banner-right {}
-.weather {
-  display: block;
+.main-banner-mid {
+  width: 685px;
+}
+.banner {
+  display: inline-block;
+  width: 100%;
+  height: 391px;
+}
+.banner-img1 {
+  background: url('../images/banner1.jpeg') no-repeat center;
+}
+.banner-img2 {
+  background: url('../images/banner2.jpeg') no-repeat center;
+}
+.banner-img3 {
+  background: url('../images/banner3.jpeg') no-repeat center;
+}
+.banner-img4 {
+  background: url('../images/banner4.jpeg') no-repeat center;
+}
+.main-banner-right {
   width: 326px;
+}
+.weather {
+  display: flex;
+  align-items: center;
+  width: 100%;
   height: 50px;
   border: 1px solid rgb(213, 214, 221);
   border-radius: 50px;
@@ -411,21 +435,23 @@ body {
   font-weight: 600;
   color: rgb(277, 0, 52);
   line-height: 32px;
+  margin-left: 10px;
 }
 .weather button {
   position: relative;
-  width: 15px;
+  width: 5px;
   height: 32px;
   font-size: 0;
   background-color: #fff;
   border: 0;
+  cursor: pointer;
 }
 .weather button::after {
   content: "";
   display: block;
   position: absolute;
-  right: 0px;
-  top: 8px;
+  right: -8px;
+  top: 15px;
   width: 0px;
   height: 0px;
   border-top: 4px solid #353d47;
@@ -433,9 +459,10 @@ body {
   border-bottom: 4px solid transparent;
   border-left: 4px solid transparent;
 }
-/* .sw-weather {
-  width: 168px;
+.sw-weather {
+  width: 170px;
   height: 32px;
+  text-align: center;
 }
 .weather-list {
   font-size: 13px;
@@ -452,11 +479,14 @@ body {
   display: inline-block;
   width: 38px;
   font-size: 13px;
-  line-height: 32px;
+  line-height: 19px;
   color: rgb(68, 68, 68);
-} */
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 20px;;
+  text-align: center;
+}
 .weather-text {
-  display: none;
+  display: inline-block;
 }
 .mayor {
   position: relative;

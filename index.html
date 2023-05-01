@@ -123,12 +123,12 @@
           <div class="main-banner-left">
             <div class="main-btn-area">
               <span class="btn main-prev-btn">이전</span>
-              <span class="count"><b>1</b>/3</span>
+              <span class="count"><b>1</b>/4</span>
               <span class="btn main-next-btn">다음</span>
               <span class="main-pause-btn">정지</span>
             </div>
-            <div class="swiper">
-              <div class="swiper-wrapper sw-main-left">
+            <div class="swiper sw-main-left">
+              <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a href="#" class="banner-text">
                     <h2 class="banner-title">
@@ -141,65 +141,140 @@
                       대구 굴기의 시작입니다</p>
                   </a>
                 </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner-text">
+                    <h2 class="banner-title">
+                      자유와 활력이 넘치는 파워풀 대구
+                    </h2>
+                    <p>
+                      2023년은 대구 굴기(崛起)의 원년<br>
+                      50년 미래 번영을 향해 다시 일어서는 대구</p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner-text">
+                    <h2 class="banner-title">
+                      대구가 다 해드립니다
+                    </h2>
+                    <p>
+                      '대한민국 미래산업 투자1번지'<br>
+                      대구경북신공항 개항, 미래신산업 집중유치,<br>
+                      원스톱 투자이원으로 막힘없이 한번에!</p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner-text">
+                    <h2 class="banner-title">
+                      신천이<br>달라집니다!
+                    </h2>
+                    <p>
+                      하천을 넘어 도시의 랜드마크로<br>
+                      매일 1급수 10만톤 공급으로<br>
+                      더 깨끗하게, 물과 숲, 사람이 어우러지는<br>
+                      푸른 신천숲, 사계절 즐기는 수변공원</p>
+                  </a>
+                </div>
               </div>
             </div>
             <script>
-              new Swiper(".sw-main-left", {
-                // slidesPerView: 1,
-                // // slidesPerGroup: 1,
-              })
-            </script>
+              const swiper = new Swiper(".sw-main-left", {
+                // Optional parameters
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 34,
+                autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+                },
+                loop: true,
+                navigation: {
+                  nextEl: ".main-next-btn",
+                  prevEl: ".main-prev-btn",
+                },
+              });
+              </script>
           </div>
           <div class="main-banner-mid">
-            <img src="images/banner1.jpeg" alt="대구경북신공항">
+            <div class="swiper sw-main-img">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="banner banner-img1"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner banner-img2"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner banner-img3"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner banner-img4"></a>
+                </div>
+              </div>
+            </div>
+            <script>
+              new Swiper(".sw-main-img", {
+                // Optional parameters
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+                },
+                loop: true,
+                navigation: {
+                  nextEl: ".main-next-btn",
+                  prevEl: ".main-prev-btn",
+                },
+              });
+            </script>
           </div>
           <div class="main-banner-right">
             <a href="#" class="weather">
               <img src="images/rain.png" alt="날씨-비">
               <span class="temperature">22.6℃</span>
               <button></button>
-              <!-- <div class="swiper sw-weather">
+              <div class="swiper sw-weather">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <a href="#" class="weather-text">
+                    <div href="#" class="weather-text">
                       <span class="weather-list">미세먼지 <em>73</em>μg/㎥</span>
                       <span class="weather-level">보통</span>
-                    </a>
+                    </div>
                   </div>
                   <div class="swiper-slide">
-                    <a href="#" class="weather-text">
+                    <div href="#" class="weather-text">
                       <span class="weather-list">오존 <em>0.062</em>ppm</span>
                       <span class="weather-level">보통</span>
-                    </a>
+                    </div>
                   </div>
                   <div class="swiper-slide">
-                    <a href="#" class="weather-text">
+                    <div href="#" class="weather-text">
                       <span class="weather-list">초미세먼지</span> <em>16</em>μg/㎥</span>
                       <span class="weather-level">보통</span>
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <script>
-                // new Swiper('sw-weather', {
-                //   direction: 'vertical',
-                //   slidesPerView: 1,
-                //   slidesPerGroup: 1,
-                //   autoplay: {
-                //     delay: 2500,
-                //     disableOnInteraction: false,
-                //   },
-                //   loop: true,
-                // })
-              </script> -->
             </a>
+            <script>
+              new Swiper(".sw-weather", {
+                // Optional parameters
+                slidesPerView: 1,
+                direction: 'vertical',
+                autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+                },
+                loop: true,
+              });
+              </script>
             <div class="mayor">
-                <img src="images/img_mayor_tit1.png" alt="파워풀 대구"  class="mayor-title">
-                <div class="mayor-links">
-                  <a href="#" class="mayor-shortcuts">시장실 바로가기</a>
-                  <a href="#" class="promise-shortcuts">시민과의 약속</a>
-                </div>
-                <a href="#" class="mayor-img"><img src="images/img_mayor.png" alt="홍준표시장"></a>
+              <img src="images/img_mayor_tit1.png" alt="파워풀 대구"  class="mayor-title">
+              <div class="mayor-links">
+                <a href="#" class="mayor-shortcuts">시장실 바로가기</a>
+                <a href="#" class="promise-shortcuts">시민과의 약속</a>
+              </div>
+              <a href="#" class="mayor-img"><img src="images/img_mayor.png" alt="홍준표시장"></a>
             </div>
           </div>
         </div>
@@ -528,7 +603,7 @@
                 </div>
               </div>
               <script>
-                const swiper = new Swiper(".swiper", {
+                new Swiper(".sw-info", {
                   // Optional parameters
                   slidesPerView: 2,
                   slidesPerGroup: 2,
@@ -712,8 +787,8 @@
                   },
                   loop: true,
                   navigation: {
-                    nextEl: ".service-bt-prev",
-                    prevEl: ".service-bt-next",
+                    nextEl: ".service-bt-next",
+                    prevEl: ".service-bt-prev",
                   },
                 });
               </script>
