@@ -1230,6 +1230,7 @@ body {
 .btns {
   width: 180px;
   font-size: 0;
+  cursor: pointer;
 }
 .btns > span {
   display: inline-block;
