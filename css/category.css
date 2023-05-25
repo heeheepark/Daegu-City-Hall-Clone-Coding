@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* 카테고리 */
+.category {
+  background: rgb(234, 235, 237);
+}
+.category .inner {
+  height: 175px;
+}
+.category-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  margin-top: 60px;
+}
+.category-list li {
+}
+.category-list li a {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.icon {
+  width: 86px;
+  height: 86px;
+  background: #fff;
+  border-radius: 50%;
+}
+.icon1 {
+  background: #fff url("../images/ico_part.png") no-repeat;
+  background-position: 0;
+}
+.icon2 {
+  background: #fff url("../images/ico_part.png") no-repeat;
+  background-position: -85px;
+}
+.icon3 {
+  background: #fff url("../images/ico_part.png") no-repeat;
+  background-position: -175px;
+}
+.icon4 {
+  background: #fff url("../images/ico_part.png") no-repeat;
+  background-position: -260px;
+}
+.icon5 {
+  background: #fff url("../images/ico_part.png") no-repeat;
+  background-position: -340px;
+}
+.icon6 {
+  background: #fff url("../images/ico_part.png") no-repeat;
+  background-position: -425px;
+}
+.icon7 {
+  background: #fff url("../images/ico_part.png") no-repeat;
+  background-position: -515px;
+}
+.icon8 {
+  background: #fff url("../images/ico_part.png") no-repeat;
+  background-position: -600px;
+}
+.icon9 {
+  background: #fff url("../images/ico_part.png") no-repeat;
+  background-position: -685px;
+}
+.icon10 {
+  background: #fff url("../images/ico_part.png") no-repeat;
+  background-position: -770px;
+}
+.icon-text {
+  margin-top: 10px;
+  font-size: 16px;
+  letter-spacing: -1px;
+}

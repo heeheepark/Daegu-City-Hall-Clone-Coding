@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 하단 */
+.footer {
+  background: rgb(235, 236, 241);
+}
+.footer .inner {
+}
+.footer-top {
+  height: 69px;
+  font-size: 0;
+  border-bottom: 1px solid rgb(213, 214, 221);
+}
+.footer-top a {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 69px;
+  letter-spacing: -1px;
+  padding: 0 10px;
+  color: rgb(68, 68, 68);
+}
+.footer-top a:first-child {
+  padding-left: 0;
+}
+.footer-top a:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 2px;
+  left: 0px;
+  top: calc(100% / 2 - 1px);
+  background: #000;
+}
+.footer-top a strong {
+  font-weight: 700;
+}
+.footer-bottom {
+  height: 99px;
+  padding: 25px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom-mid {
+  padding-right: 80px;
+}
+.footer-bottom-mid p {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 3px;
+}
+.footer-bottom-mid p:last-child {
+  color: rgb(136, 136, 136);
+  margin-bottom: 0;
+}
+.img120 {
+  margin-right: 20px;
+}
