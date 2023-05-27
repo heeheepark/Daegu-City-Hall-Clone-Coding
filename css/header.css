@@ -9,11 +9,18 @@
   background: #fff;
   z-index: 999999;
 }
+.header-active {
+  border-bottom: 1px solid rgb(79, 98, 157);
+}
 .header .inner {
   height: 96px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+.header .inner-active {
+  height: 720px;
 }
 .logo {
   display: block;
@@ -37,6 +44,30 @@
 .gnb > ul > li > a {
   padding: 0 40px;
   letter-spacing: -1px;
+  display: inline-block;
+}
+.gnb-active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 9999999;
+  margin: 0;
+}
+.gnb-active > ul > li {
+  width: 290px;
+  height: 101px;
+  line-height: 101px;
+  border-bottom: 1px solid rgb(76, 96, 156);
+}
+.gnb-active > ul > li > a {
+  text-align: center;
+  display: block;
+}
+.gnb-active > ul > li:hover > a {
+  color: rgb(33, 75, 156);
 }
 .submenu {
   display: none;
@@ -46,14 +77,95 @@
   color: rgb(68, 68, 68);
   letter-spacing: -1px;
   position: absolute;
-  top: 300%;
+  top: 114px;
   left: 0;
+}
+.submenu::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  right: -39px;
+  width: 1px;
+  height: 610px;
+  background: rgb(221, 221, 221);
 }
 .submenu > li {
   width: 290px;
   height: 37px;
   padding: 8px 0px 8px 8px;
   border-bottom: 1px solid rgb(242, 242, 242);
+}
+.gnb-active > ul > li:last-child > .submenu > li {
+  padding: 3px 0 0 0;
+}
+.submenu > li > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.submenu > li:hover {
+  background: rgb(245, 249, 255);
+}
+.submenu > li:hover > a {
+  color: rgb(49, 92, 164);
+}
+.submenu > li > a::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 0px;
+  width: 5px;
+  height: 10px;
+  border: none;
+  background: url("../images/sp_com.png") no-repeat center;
+  background-position: 0px -200px;
+}
+.submenu > li > a > img {
+  width: 40px;
+  height: 30px;
+  background-image: url("../images/sp_gnb_part.png");
+  background-color: #fff;
+  border: 0;
+}
+.img1 {
+  background-position: 0 0;
+}
+.img2 {
+  height: 33px !important;
+  background-position: 0 -29px;
+}
+.img3 {
+  background-position: 0 -60px;
+}
+.img4 {
+  height: 33px !important;
+  background-position: 0 -89px;
+}
+.img5 {
+  height: 34px !important;
+  background-position: 0 -118px;
+}
+.img6 {
+  height: 32px !important;
+  background-position: 0 -149px;
+}
+.img7 {
+  height: 32px !important;
+  background-position: 0 -179px;
+}
+.img8 {
+  height: 32px !important;
+  background-position: 0 -209px;
+}
+.img9 {
+  background-position: 0 -240px;
+}
+.img10 {
+  background-position: 0 -269px;
+}
+
+.submenu > li > a > span {
+  margin-left: 5px;
 }
 .member-list {
   width: 280px;

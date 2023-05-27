@@ -1,13 +1,11 @@
 window.addEventListener("load", function (event) {
   const communityList = this.document.querySelector(".community-list");
-  console.log(communityList);
 
   const xhr = new XMLHttpRequest();
   xhr.addEventListener("readystatechange", function (event) {
     let req = event.target;
     if (req.readyState === XMLHttpRequest.DONE) {
       let data = JSON.parse(req.response);
-      console.log(data);
       makeCommunityHtml(data);
     }
   });
@@ -38,7 +36,6 @@ window.addEventListener("load", function (event) {
           </a>
         </li>
         `;
-      console.log(temp);
       html += temp;
     }
     communityList.innerHTML = html;
