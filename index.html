@@ -45,6 +45,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/layout.css" />
     <script src="js/header.js"></script>
+    <script src="js/mainbanner.js"></script>
     <script src="js/community.js"></script>
     <script src="js/service.js"></script>
     <script src="js/sitemap.js"></script>
@@ -403,23 +404,6 @@
                 </div>
               </div>
             </div>
-            <script>
-              const swiper = new Swiper(".sw-main-left", {
-                // Optional parameters
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-                spaceBetween: 34,
-                autoplay: {
-                  delay: 2500,
-                  disableOnInteraction: false,
-                },
-                loop: true,
-                navigation: {
-                  nextEl: ".main-next-btn",
-                  prevEl: ".main-prev-btn",
-                },
-              });
-            </script>
           </div>
           <div class="main-banner-mid">
             <div class="swiper sw-main-img">
@@ -438,22 +422,6 @@
                 </div>
               </div>
             </div>
-            <script>
-              new Swiper(".sw-main-img", {
-                // Optional parameters
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-                autoplay: {
-                  delay: 2500,
-                  disableOnInteraction: false,
-                },
-                loop: true,
-                navigation: {
-                  nextEl: ".main-next-btn",
-                  prevEl: ".main-prev-btn",
-                },
-              });
-            </script>
           </div>
           <div class="main-banner-right">
             <a href="#" class="weather">
@@ -487,18 +455,6 @@
                 </div>
               </div>
             </a>
-            <script>
-              new Swiper(".sw-weather", {
-                // Optional parameters
-                slidesPerView: 1,
-                direction: "vertical",
-                autoplay: {
-                  delay: 2500,
-                  disableOnInteraction: false,
-                },
-                loop: true,
-              });
-            </script>
             <div class="mayor">
               <img
                 src="images/img_mayor_tit1.png"
