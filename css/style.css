@@ -26,6 +26,9 @@ html {
 }
 
 body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   font-family: "맑은 고딕";
   color: rgb(68, 68, 68);
   word-break: keep-all;
@@ -34,6 +37,8 @@ body {
 }
 
 /* 공통 클래스 */
+.wrap {
+}
 .inner {
   width: 1400px;
   margin: 0 auto;
@@ -79,13 +84,84 @@ body {
   margin-left: 2px;
 }
 
+/* 검색창 */
+.back-dim {
+  position: absolute;
+}
+.search-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1260px;
+  height: 480px;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.search-top {
+  padding: 40px 0 20px;
+}
+.search-input {
+  position: relative;
+  width: 700px;
+  height: 86px;
+  border: 4px solid rgb(23, 180, 100);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 90px;
+}
+.input-txt {
+  display: inline-block;
+  width: 130px;
+  font-size: 16px;
+  line-height: 78px;
+}
+.input-txt::after {
+  content: "";
+}
 
-
-
-
-
-
-
-
-
-
+.search-input input {
+  width: 477px;
+  border: 0;
+  margin-left: 20px;
+  font-size: 36px;
+  color: rgb(0, 85, 154);
+}
+.search-input input::placeholder {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(0, 144, 72);
+}
+.search-icon {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 90px;
+  height: 84px;
+  background: rgb(9, 169, 88);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.search-icon span {
+  display: inline-block;
+  font-size: 0;
+  width: 28px;
+  height: 28px;
+  line-height: 86px;
+}
+.hot-search-word {
+}
+.hot-search-word span {
+}
+.search-word-list {
+}
+.search-word-list ul {
+}
+.search-word-list ul li {
+}
