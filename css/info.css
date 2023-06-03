@@ -58,13 +58,15 @@
   align-items: center;
 }
 .pages {
-  display: inline-block;
-  color: rgb(68, 68, 68);
+  width: 36px;
   font-size: 15px;
-  line-height: 31px;
+  letter-spacing: -2px;
   text-align: center;
-  vertical-align: middle;
-  width: 50px;
+  color: rgb(68, 68, 68);
+  margin: 0 5px;
+}
+.info-play-btn {
+  background-position: -182px 0px;
 }
 .info-zone-bottom {
   width: 100%;

@@ -34,6 +34,9 @@
 .service-btns > .pause-btn {
   background-position: -252px 0px;
 }
+.service-play-btn {
+  background-position: -287px 0px !important;
+}
 .service-more-btn {
   width: 31px;
   height: 31px;
@@ -94,7 +97,7 @@
   height: 38px;
   font-size: 15px;
   line-height: 19.5px;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   margin-top: 8px;
 }
 .service-right {

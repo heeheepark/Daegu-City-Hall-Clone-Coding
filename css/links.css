@@ -27,8 +27,11 @@
 .btns span:first-child {
   background-position: -112px 0;
 }
-.btns span:nth-child(2) {
-  background-position: -182px 0;
+.btns .pause-btn {
+  background-position: -147px 0;
+}
+.links-play-btn {
+  background-position: -182px 0 !important;
 }
 .btns span:nth-child(3) {
   background-position: -217px 0;

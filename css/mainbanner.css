@@ -33,7 +33,7 @@
 .main-btn-area .main-next-btn {
   background-position: -55px 0;
 }
-.swiper-pagination-fraction {
+.main-btn-area .swiper-pagination-fraction {
   width: 36px;
   font-size: 15px;
   letter-spacing: -2px;
@@ -41,7 +41,7 @@
   color: rgb(68, 68, 68);
   margin: 0 5px;
 }
-.swiper-pagination-current {
+.main-btn-area .swiper-pagination-current {
   color: rgb(237, 21, 21);
 }
 .main-pause-btn {

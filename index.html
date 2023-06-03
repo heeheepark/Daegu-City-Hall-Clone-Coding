@@ -46,8 +46,10 @@
     <link rel="stylesheet" href="css/layout.css" />
     <script src="js/header.js"></script>
     <script src="js/mainbanner.js"></script>
+    <script src="js/info.js"></script>
     <script src="js/community.js"></script>
     <script src="js/service.js"></script>
+    <script src="js/links.js"></script>
     <script src="js/sitemap.js"></script>
   </head>
   <body>
@@ -681,57 +683,10 @@
             <div class="info-zone-bottom">
               <div class="swiper sw-info">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="#" class="info-img">
-                      <img
-                        src="images/info_img1.jpeg"
-                        alt="시민참여형 의제발굴 이벤트"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" class="info-img">
-                      <img
-                        src="images/info_img2.jpeg"
-                        alt="시내버스 노선체계 시민의견"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" class="info-img">
-                      <img
-                        src="images/info_img3.jpeg"
-                        alt="여성대상 후보자 공모"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" class="info-img">
-                      <img
-                        src="images/info_img4.jpeg"
-                        alt="스마일 국제사진 공모전"
-                      />
-                    </a>
-                  </div>
+                  <!-- json 연동 -->
                 </div>
               </div>
-              <script>
-                new Swiper(".sw-info", {
-                  // Optional parameters
-                  slidesPerView: 2,
-                  slidesPerGroup: 2,
-                  spaceBetween: 34,
-                  autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                  },
-                  loop: true,
-                  navigation: {
-                    nextEl: ".info-next-btn",
-                    prevEl: ".info-prev-btn",
-                  },
-                });
-              </script>
+              <script></script>
             </div>
           </div>
         </div>
@@ -793,7 +748,7 @@
                         src="images/service8.png"
                         alt="익명신고 (레드휘슬)"
                       />
-                      <span>익명신고 (레드휘슬)</span>
+                      <span>익명신고(레드휘슬)</span>
                     </a>
                   </div>
                   <div class="swiper-slide">
@@ -803,7 +758,7 @@
                     </a>
                     <a href="#" class="service-list">
                       <img src="images/service10.png" alt="자치법규" />
-                      <span>자치법규 (조례·규칙)</span>
+                      <span>자치법규(조례·규칙)</span>
                     </a>
                     <a href="#" class="service-list">
                       <img
@@ -845,7 +800,7 @@
                   <div class="swiper-slide">
                     <a href="#" class="service-list">
                       <img src="images/service17.png" alt="비상대피/급수시설" />
-                      <span>비상대피/ 급수시설</span>
+                      <span>비상대피/급수시설</span>
                     </a>
                     <a href="#" class="service-list">
                       <img src="images/service18.png" alt="주민참여예산" />
@@ -891,20 +846,6 @@
                   </div>
                 </div>
               </div>
-              <script>
-                new Swiper(".sw-service", {
-                  slidesPerView: 1,
-                  autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                  },
-                  loop: true,
-                  navigation: {
-                    nextEl: ".service-bt-next",
-                    prevEl: ".service-bt-prev",
-                  },
-                });
-              </script>
             </div>
           </div>
           <div class="service-right">
@@ -948,7 +889,7 @@
         <div class="inner">
           <div class="btns">
             <span class="links-prev-btn">이전</span>
-            <span>정지</span>
+            <span class="pause-btn">정지</span>
             <span class="links-next-btn">다음</span>
             <span>목록</span>
           </div>
@@ -993,22 +934,7 @@
                 </div>
               </div>
             </div>
-            <script>
-              new Swiper(".sw-links", {
-                slidesPerView: 6,
-                spaceBetween: 0,
-                slidesPerGroup: 1,
-                autoplay: {
-                  delay: 2500,
-                  disableOnInteraction: false,
-                },
-                loop: true,
-                navigation: {
-                  nextEl: ".links-next-btn",
-                  prevEl: ".links-prev-btn",
-                },
-              });
-            </script>
+            <script></script>
           </div>
         </div>
       </section>
@@ -1059,7 +985,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">관련기관사이트 바로가기</a>
+              <a href="#">관련기관 바로가기</a>
               <ul class="sublist">
                 <li><a href="#">정부/지자체 조직도</a></li>
                 <li><a href="#">대구교통공사</a></li>
