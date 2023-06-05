@@ -3,27 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
     <link rel="manifest" href="images/favicon/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
@@ -38,12 +21,10 @@
     <link rel="stylesheet" href="css/reset.css" />
     <script src="js/prefixfree.min.js"></script>
     <script src="js/respond.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/layout.css" />
+    <script src="js/main.js"></script>
     <script src="js/header.js"></script>
     <script src="js/mainbanner.js"></script>
     <script src="js/info.js"></script>
@@ -87,7 +68,12 @@
               <fieldset>
                 <div class="input-range">
                   <span>검색범위</span>
-                  <input
+                  <select class="range-list">
+                    <option value="전체">전체</option>
+                    <option value="제목">제목</option>
+                    <option value="내용">내용</option>
+                  </select>
+                  <!-- <input
                     type="text"
                     class="range"
                     list="depList"
@@ -97,7 +83,7 @@
                     <option value="전체"></option>
                     <option value="제목"></option>
                     <option value="내용"></option>
-                  </datalist>
+                  </datalist> -->
                   <!-- <li>
                     <span>전체</span>
                     <ul class="sub-range">
@@ -461,9 +447,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a href="#" class="banner-text">
-                    <h2 class="banner-title">
-                      대구경북신공항 특별법 국회 통과!
-                    </h2>
+                    <h2 class="banner-title">대구경북신공항 특별법 국회 통과!</h2>
                     <p>
                       2030년 개항!<br />
                       새로운 하늘길이 열립니다<br />
@@ -474,9 +458,7 @@
                 </div>
                 <div class="swiper-slide">
                   <a href="#" class="banner-text">
-                    <h2 class="banner-title">
-                      자유와 활력이 넘치는 파워풀 대구
-                    </h2>
+                    <h2 class="banner-title">자유와 활력이 넘치는 파워풀 대구</h2>
                     <p>
                       2023년은 대구 굴기(崛起)의 원년<br />
                       50년 미래 번영을 향해 다시 일어서는 대구
@@ -534,9 +516,7 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div href="#" class="weather-text">
-                      <span class="weather-list"
-                        >미세먼지 <em>73</em>μg/㎥</span
-                      >
+                      <span class="weather-list">미세먼지 <em>73</em>μg/㎥</span>
                       <span class="weather-level">보통</span>
                     </div>
                   </div>
@@ -548,9 +528,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div href="#" class="weather-text">
-                      <span class="weather-list"
-                        >초미세먼지 <em>16</em>μg/㎥</span
-                      >
+                      <span class="weather-list">초미세먼지 <em>16</em>μg/㎥</span>
                       <span class="weather-level">보통</span>
                     </div>
                   </div>
@@ -558,18 +536,12 @@
               </div>
             </a>
             <div class="mayor">
-              <img
-                src="images/img_mayor_tit1.png"
-                alt="파워풀 대구"
-                class="mayor-title"
-              />
+              <img src="images/img_mayor_tit1.png" alt="파워풀 대구" class="mayor-title" />
               <div class="mayor-links">
                 <a href="#" class="mayor-shortcuts">시장실 바로가기</a>
                 <a href="#" class="promise-shortcuts">시민과의 약속</a>
               </div>
-              <a href="#" class="mayor-img"
-                ><img src="images/img_mayor.png" alt="홍준표시장"
-              /></a>
+              <a href="#" class="mayor-img"><img src="images/img_mayor.png" alt="홍준표시장" /></a>
             </div>
           </div>
         </div>
@@ -641,21 +613,11 @@
             </div>
             <div class="issue-right-bottom">
               <a href="#" class="hot-issue-left">
-                <img
-                  src="images/20230421023434191.png"
-                  alt="지구의날"
-                  class="hot-issue-img1"
-                />
-                <p class="hot-issue-title">
-                  지구에게 휴식을... 제15회 기후변화주간 운영
-                </p>
+                <img src="images/20230421023434191.png" alt="지구의날" class="hot-issue-img1" />
+                <p class="hot-issue-title">지구에게 휴식을... 제15회 기후변화주간 운영</p>
               </a>
               <a href="#" class="hot-issue-right">
-                <img
-                  src="images/20230419054213472.png"
-                  alt="주택지원사업"
-                  class="hot-issue-img2"
-                />
+                <img src="images/20230419054213472.png" alt="주택지원사업" class="hot-issue-img2" />
                 <p class="hot-issue-title">2023년 주택지원사업 시보조금 지원</p>
               </a>
             </div>
@@ -814,10 +776,7 @@
                       <span>D-데이터허브</span>
                     </a>
                     <a href="#" class="service-list">
-                      <img
-                        src="images/service2.png"
-                        alt="대구 서비스 인구분석"
-                      />
+                      <img src="images/service2.png" alt="대구 서비스 인구분석" />
                       <span>대구 서비스 인구분석</span>
                     </a>
                     <a href="#" class="service-list">
@@ -829,10 +788,7 @@
                       <span>규제정보포털</span>
                     </a>
                     <a href="#" class="service-list">
-                      <img
-                        src="images/service5.png"
-                        alt="바른주차안내 문자서비스"
-                      />
+                      <img src="images/service5.png" alt="바른주차안내 문자서비스" />
                       <span>바른주차안내 문자서비스</span>
                     </a>
                     <a href="#" class="service-list">
@@ -844,10 +800,7 @@
                       <span>공무원 교육원</span>
                     </a>
                     <a href="#" class="service-list">
-                      <img
-                        src="images/service8.png"
-                        alt="익명신고 (레드휘슬)"
-                      />
+                      <img src="images/service8.png" alt="익명신고 (레드휘슬)" />
                       <span>익명신고(레드휘슬)</span>
                     </a>
                   </div>
@@ -861,17 +814,11 @@
                       <span>자치법규(조례·규칙)</span>
                     </a>
                     <a href="#" class="service-list">
-                      <img
-                        src="images/service11.png"
-                        alt="대구시 통합모니터단"
-                      />
+                      <img src="images/service11.png" alt="대구시 통합모니터단" />
                       <span>대구시 통합모니터단</span>
                     </a>
                     <a href="#" class="service-list">
-                      <img
-                        src="images/service12.png"
-                        alt="대기오염 문자알림 신청"
-                      />
+                      <img src="images/service12.png" alt="대기오염 문자알림 신청" />
                       <span>대기오염 문자알림 신청</span>
                     </a>
                     <a href="#" class="service-list">
@@ -879,10 +826,7 @@
                       <span>대구 음악창의도시</span>
                     </a>
                     <a href="#" class="service-list">
-                      <img
-                        src="images/service14.png"
-                        alt="대구시청 작은도서관"
-                      />
+                      <img src="images/service14.png" alt="대구시청 작은도서관" />
                       <span>대구시청 작은도서관</span>
                     </a>
                     <a href="#" class="service-list">
@@ -890,10 +834,7 @@
                       <span>도시브랜드 웹툰</span>
                     </a>
                     <a href="#" class="service-list">
-                      <img
-                        src="images/service16.png"
-                        alt="대구 전기차 충전소"
-                      />
+                      <img src="images/service16.png" alt="대구 전기차 충전소" />
                       <span>대구 전기차 충전소</span>
                     </a>
                   </div>
@@ -913,10 +854,7 @@
                       <span>서대구역세권개발</span>
                     </a>
                     <a href="#" class="service-list">
-                      <img
-                        src="images/service20.jpg"
-                        alt="항공사진 통합플랫폼"
-                      />
+                      <img src="images/service20.jpg" alt="항공사진 통합플랫폼" />
                       <span>항공사진 통합플랫폼</span>
                     </a>
                     <a href="#" class="service-list">
@@ -973,10 +911,7 @@
               <ul class="service-menu-list">
                 <li><a href="#" class="shortcut">대구광역시 뉴스룸</a></li>
                 <li><a href="#" class="shortcut">민원신청</a></li>
-                <li>
-                  <a href="#" class="shortcut">공보</a
-                  ><a href="#" class="shortcut"> / 보도자료</a>
-                </li>
+                <li><a href="#" class="shortcut">공보</a><a href="#" class="shortcut"> / 보도자료</a></li>
                 <li><a href="#" class="shortcut">통합모니터단</a></li>
               </ul>
             </div>
@@ -1122,23 +1057,12 @@
               <img src="images/logo_footer.png" alt="대구광역시로고" />
             </div>
             <div class="footer-bottom-mid">
-              <p>
-                동인청사 : (우 41911) 대구광역시 중구 공평로 88 / 산격청사 : (우
-                41542)대구광역시 북구 연암로 40 / 전화번호 : 053)120,
-                053)803-0114
-              </p>
+              <p>동인청사 : (우 41911) 대구광역시 중구 공평로 88 / 산격청사 : (우 41542)대구광역시 북구 연암로 40 / 전화번호 : 053)120, 053)803-0114</p>
               <p>© DAEGU METROPOLITAN CITY ALL RIGHTS RESERVED.</p>
             </div>
             <div class="footer-bottom-right">
-              <img
-                src="images/img_120.png"
-                alt="120달구벌콜센터"
-                class="img120"
-              />
-              <img
-                src="images/img_wa.png"
-                alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)"
-              />
+              <img src="images/img_120.png" alt="120달구벌콜센터" class="img120" />
+              <img src="images/img_wa.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" />
             </div>
           </div>
         </div>
