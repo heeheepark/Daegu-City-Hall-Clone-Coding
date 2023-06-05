@@ -1,1 +1,121 @@
 @charset "utf-8";
+
+/* 퀵메뉴 */
+.quick-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999999;
+}
+.quick-menu .inner {
+  width: 120px;
+  border: 1px solid rgb(213, 214, 221);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background: #fff;
+}
+.quick-menu-list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 16px;
+}
+.quick-menu-list li {
+  padding: 5px 0 10px;
+  border-bottom: 1px solid rgb(213, 213, 213);
+}
+.quick-menu-list li:last-child {
+  border-bottom: 0;
+}
+.quick-menu-list li a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: rgb(68, 68, 68);
+}
+.qm-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 16px;
+}
+.qm-icon1 {
+  background: url('../images/ico_top.jpg') no-repeat;
+  background-size: cover;
+}
+.qm-icon2 {
+  background: url('../images/ico_top.jpg') no-repeat;
+  background-position: -55px;
+  background-size: cover;
+}
+.qm-icon3 {
+  background: url('../images/ico_top.jpg') no-repeat;
+  background-position: -110px;
+  background-size: cover;
+}
+.qm-icon4 {
+  background: url('../images/ico_top.jpg') no-repeat;
+  background-position: -490px;
+  background-size: cover;
+}
+.qm-icon5 {
+  background: url('../images/ico_top.jpg') no-repeat;
+  background-position: -168px;
+  background-size: cover;
+}
+.qm-icon6 {
+  background: url('../images/ico_top.jpg') no-repeat;
+  background-position: -218px;
+  background-size: cover;
+}
+.qm-icon7 {
+  background: url('../images/ico_top.jpg') no-repeat;
+  background-position: -272px;
+  background-size: cover;
+}
+.qm-icon8 {
+  background: url('../images/ico_top.jpg') no-repeat;
+  background-position: -333px;
+  background-size: cover;
+}
+.qm-icon9 {
+  background: url('../images/ico_top.jpg') no-repeat;
+  background-position: -381px;
+  background-size: cover;
+}
+.qm-icon10 {
+  background: url('../images/ico_top.jpg') no-repeat;
+  background-position: -445px;
+  background-size: cover;
+}
+.qm-text {
+  font-size: 15px;
+  letter-spacing: -1px;
+  text-align: center;
+  line-height: 19.5px;
+}
+
+@media screen and (max-width: 1600px) {
+  .quick-menu {
+    position: initial;
+  }
+  .quick-menu .inner {
+    width: 100%;
+    border: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: transparent;
+  }
+  .quick-menu-list {
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0;
+  }
+  .quick-menu-list li {
+    width: 100px;
+    border-bottom: 0;
+  }
+  .qm-text {
+    white-space: nowrap !important;
+  }
+}

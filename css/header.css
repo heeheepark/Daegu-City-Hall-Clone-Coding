@@ -26,7 +26,7 @@
   display: block;
   width: 200px;
   height: 64px;
-  background: url("../images/logo_header.png") no-repeat center;
+  background: url('../images/logo_header.png') no-repeat center;
 }
 .gnb {
   width: 690px;
@@ -86,7 +86,7 @@
   left: 0;
 }
 .submenu::after {
-  content: "";
+  content: '';
   position: absolute;
   top: -12px;
   right: -30px;
@@ -112,21 +112,21 @@
   color: rgb(49, 92, 164);
 }
 .submenu > li > a::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(50% - 4px);
   right: 0px;
   width: 5px;
   height: 10px;
   border: none;
-  background-image: url("../images/sp_com.png");
+  background-image: url('../images/sp_com.png');
   opacity: 0.6;
   background-position: 0px -200px;
 }
 .submenu > li > a > span:first-child {
   width: 40px;
   height: 30px;
-  background-image: url("../images/sp_gnb_part.png");
+  background-image: url('../images/sp_gnb_part.png');
   background-color: #fff;
   border-image-width: 0;
 }
@@ -196,7 +196,7 @@
   position: relative;
 }
 .login::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   right: -18px;
@@ -234,7 +234,7 @@
   background: rgb(245, 249, 255);
 }
 .login-submenu::after {
-  content: "";
+  content: '';
   position: absolute;
   border-style: solid;
   border-width: 0 12px 11px 12px;
@@ -246,7 +246,7 @@
   left: 50px;
 }
 .login-submenu::before {
-  content: "";
+  content: '';
   position: absolute;
   border-style: solid;
   border-width: 0 12px 11px 12px;
@@ -261,7 +261,7 @@
   position: relative;
 }
 .language::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: -9px;
@@ -271,7 +271,7 @@
   background: #d9d9d9;
 }
 .language::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   right: -18px;
@@ -309,7 +309,7 @@
   background: rgb(245, 249, 255);
 }
 .language-submenu::after {
-  content: "";
+  content: '';
   position: absolute;
   border-style: solid;
   border-width: 0 12px 11px 12px;
@@ -322,7 +322,7 @@
 }
 
 .language-submenu::before {
-  content: "";
+  content: '';
   position: absolute;
   border-style: solid;
   border-width: 0 12px 11px 12px;
@@ -337,7 +337,7 @@
   display: block;
   height: 24px;
   width: 24px;
-  background: url("../images/img_srch.png") no-repeat center;
+  background: url('../images/img_srch.png') no-repeat center;
   border: 0;
   cursor: pointer;
 }
@@ -346,5 +346,5 @@
   border: 0;
   height: 24px;
   width: 29px;
-  background: url("../images/img_sitemap.png") no-repeat center;
+  background: url('../images/img_sitemap.png') no-repeat center;
 }
