@@ -41,7 +41,7 @@ body {
 .wrap {
 }
 .inner {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 .subtitle {
@@ -87,6 +87,7 @@ body {
 
 /* 검색창 */
 .back-dim {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -103,7 +104,7 @@ body {
   z-index: 999999999;
   background: #fff;
   text-align: center;
-  display: flex;
+  display: none;
   flex-flow: column nowrap;
   align-items: center;
 }

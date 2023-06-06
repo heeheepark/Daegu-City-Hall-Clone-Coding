@@ -28,22 +28,22 @@ window.addEventListener("load", function () {
     });
   });
 
-  gnb.addEventListener("mouseenter", function () {
-    header.classList.add("header-active");
-    gnb.classList.add("gnb-active");
-    logo.style.display = "none";
-    memList.style.display = "none";
-    submenu.forEach((item) => {
-      item.style.display = "block";
-    });
-  });
-  gnb.addEventListener("mouseleave", function () {
-    header.classList.remove("header-active");
-    gnb.classList.remove("gnb-active");
-    logo.style.display = "block";
-    memList.style.display = "block";
-    submenu.forEach((item) => {
-      item.style.display = "none";
-    });
-  });
+  // gnb.addEventListener("mouseenter", function () {
+  //   header.classList.add("header-active");
+  //   gnb.classList.add("gnb-active");
+  //   logo.style.display = "none";
+  //   memList.style.display = "none";
+  //   submenu.forEach((item) => {
+  //     item.style.display = "block";
+  //   });
+  // });
+  // gnb.addEventListener("mouseleave", function () {
+  //   header.classList.remove("header-active");
+  //   gnb.classList.remove("gnb-active");
+  //   logo.style.display = "block";
+  //   memList.style.display = "block";
+  //   submenu.forEach((item) => {
+  //     item.style.display = "none";
+  //   });
+  // });
 });
