@@ -348,3 +348,49 @@
   width: 29px;
   background: url('../images/img_sitemap.png') no-repeat center;
 }
+
+@media screen and (max-width: 1440px) {
+  .header .inner {
+    margin: 0 0.83vw;
+  }
+  .gnb {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .logo {
+    width: 170px;
+    background-size: contain;
+  }
+  .gnb > ul {
+    justify-content: center;
+  }
+  .member-list {
+    width: 120px;
+  }
+  .member-list > ul {
+    justify-content: end;
+  }
+  .member-list > ul > li:first-child,
+  .member-list > ul > li:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 70px;
+  }
+  .header .inner {
+    height: 70px;
+  }
+  .logo {
+    width: 150px;
+  }
+  .gnb {
+    display: none;
+  }
+  .member-list > ul > li:nth-child(3) {
+    display: none;
+  }
+}
