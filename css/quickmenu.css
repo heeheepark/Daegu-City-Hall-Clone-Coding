@@ -39,51 +39,51 @@
   margin: 0 16px;
 }
 .qm-icon1 {
-  background: url('../images/ico_top.jpg') no-repeat;
+  background: url("../images/ico_top.jpg") no-repeat;
   background-size: cover;
 }
 .qm-icon2 {
-  background: url('../images/ico_top.jpg') no-repeat;
+  background: url("../images/ico_top.jpg") no-repeat;
   background-position: -55px;
   background-size: cover;
 }
 .qm-icon3 {
-  background: url('../images/ico_top.jpg') no-repeat;
+  background: url("../images/ico_top.jpg") no-repeat;
   background-position: -110px;
   background-size: cover;
 }
 .qm-icon4 {
-  background: url('../images/ico_top.jpg') no-repeat;
+  background: url("../images/ico_top.jpg") no-repeat;
   background-position: -490px;
   background-size: cover;
 }
 .qm-icon5 {
-  background: url('../images/ico_top.jpg') no-repeat;
+  background: url("../images/ico_top.jpg") no-repeat;
   background-position: -168px;
   background-size: cover;
 }
 .qm-icon6 {
-  background: url('../images/ico_top.jpg') no-repeat;
+  background: url("../images/ico_top.jpg") no-repeat;
   background-position: -218px;
   background-size: cover;
 }
 .qm-icon7 {
-  background: url('../images/ico_top.jpg') no-repeat;
+  background: url("../images/ico_top.jpg") no-repeat;
   background-position: -272px;
   background-size: cover;
 }
 .qm-icon8 {
-  background: url('../images/ico_top.jpg') no-repeat;
+  background: url("../images/ico_top.jpg") no-repeat;
   background-position: -333px;
   background-size: cover;
 }
 .qm-icon9 {
-  background: url('../images/ico_top.jpg') no-repeat;
+  background: url("../images/ico_top.jpg") no-repeat;
   background-position: -381px;
   background-size: cover;
 }
 .qm-icon10 {
-  background: url('../images/ico_top.jpg') no-repeat;
+  background: url("../images/ico_top.jpg") no-repeat;
   background-position: -445px;
   background-size: cover;
 }
@@ -97,6 +97,7 @@
 @media screen and (max-width: 1600px) {
   .quick-menu {
     position: initial;
+    margin-bottom: 10px;
   }
   .quick-menu .inner {
     width: 100%;
@@ -108,6 +109,7 @@
   .quick-menu-list {
     flex-flow: row nowrap;
     justify-content: center;
+    align-items: start;
     margin: 0;
   }
   .quick-menu-list li {
