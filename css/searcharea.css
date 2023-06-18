@@ -18,7 +18,7 @@
   width: 728px;
   height: 66px;
   border: 2px solid rgb(9, 169, 88);
-  border-radius: 2rem 0 0 0;
+  border-radius: 2rem 0 2rem 0;
   padding: 0 30px;
   font-size: 28px;
   color: rgb(9, 169, 88);
@@ -34,4 +34,35 @@
   border: 0;
   border-radius: 2rem 0 2rem 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 875px) {
+  .search-area {
+    margin-top: 70px;
+    height: 100%;
+  }
+  .search-area .inner {
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  .search {
+    position: relative;
+    width: 85%;
+    height: 50px;
+    padding: 20px 0 40px;
+  }
+  .search-text {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 25px;
+  }
+  .searchBtn {
+    width: 60px;
+    height: 50px;
+    background: rgb(9, 169, 88) url("../images/btn_srch_m.png") no-repeat;
+    background-position: 15px 10px;
+    background-size: 50%;
+    padding: 20px;
+  }
 }
