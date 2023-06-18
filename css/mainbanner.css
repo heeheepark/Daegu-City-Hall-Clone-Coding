@@ -3,7 +3,13 @@
 .main-banner {
 }
 .main-banner .inner {
+  position: relative;
   height: 390px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-swiper {
+  width: 1042px;
   display: flex;
   justify-content: space-between;
 }
@@ -216,4 +222,349 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .main-banner {
+    width: 100vw;
+  }
+  .main-banner .inner {
+    width: 100%;
+    height: 27.86vw;
+    gap: 0 12px;
+    padding: 0 10px;
+  }
+  .main-swiper {
+    width: 74.43vw;
+  }
+  .main-banner-left {
+    position: relative;
+    width: 35%;
+  }
+  .main-btn-area {
+    margin-left: 0.71vw;
+  }
+  .sw-main-left {
+    width: 100%;
+  }
+  .banner-text {
+    width: 100%;
+  }
+  .banner-title {
+    width: 100%;
+    font-size: 2.57vw;
+    line-height: 3.57vw;
+    padding-top: 1.43vw;
+  }
+  .banner-text p {
+    width: 100%;
+    font-size: 1.14vw;
+    line-height: 2vw;
+    margin-top: 2.14vw;
+  }
+  .main-banner-mid {
+    width: 65%;
+    height: 100%;
+  }
+  .banner {
+    width: 100%;
+    height: 27.86vw;
+    background-size: cover;
+  }
+  .main-banner-right {
+    width: 25%;
+    height: 27.86vw;
+  }
+  .weather {
+    height: 3.57vw;
+    border-radius: 3.57vw;
+    padding: 0.43vw 0.71vw 0.43vw 2.14vw;
+  }
+  .temperature {
+    font-size: 1.14vw;
+    line-height: 2.29vw;
+    margin-left: 0.71vw;
+  }
+  .weather button {
+    width: 0.36vw;
+    height: 2.29vw;
+  }
+  .weather button::after {
+    right: -0.57vw;
+    top: 1.07vw;
+    border-top: 0.29vw solid #353d47;
+    border-right: 0.29vw solid transparent;
+    border-bottom: 0.29vw solid transparent;
+    border-left: 0.29vw solid transparent;
+  }
+  .sw-weather {
+    width: 12.14vw;
+    height: 2.29vw;
+  }
+  .weather-list {
+    font-size: 0.93vw;
+    line-height: 2.29vw;
+  }
+  .weather-list em {
+    font-size: 0.93vw;
+    line-height: 2.29vw;
+  }
+  .weather-level {
+    width: 2.71vw;
+    height: 1.5vw;
+    font-size: 0.93vw;
+    line-height: 1.07vw;
+    border-radius: 1.43vw;
+  }
+  .weather-text {
+    display: inline-block;
+  }
+  .mayor {
+    position: relative;
+    width: 23.29vw;
+    height: 24.36vw;
+    background: url("../images/img_mayor_bg.png") no-repeat center;
+    background-size: cover;
+  }
+  .mayor-title {
+    width: 90%;
+    margin: 2.14vw 1vw 0;
+  }
+  .mayor-links {
+    font-size: 1.44vw;
+    line-height: 1.5vw;
+    margin-top: 0.51vw;
+  }
+  .mayor-shortcuts {
+    margin: 1.43vw 2.14vw 0;
+  }
+  .promise-shortcuts {
+    margin: 1.43vw 2.14vw 0;
+  }
+  .mayor-img {
+    width: 16.86vw;
+    height: 20.86vw;
+  }
+  .mayor-img > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-banner .inner {
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-swiper {
+    position: relative;
+    width: 100%;
+  }
+  .main-btn-area {
+    left: calc(50% - 70px);
+    bottom: 29px;
+  }
+  .main-btn-area .btn {
+    width: 26px;
+    height: 26px;
+    background: url("../images/sp_main_m.png") no-repeat center;
+    background-size: 400px 400px;
+    background-position: 0px 0px;
+  }
+  .main-btn-area .main-next-btn {
+    background-position: -84px 0;
+  }
+  .main-btn-area .swiper-pagination-fraction {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+  .main-pause-btn {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url("../images/sp_main_m.png") no-repeat center;
+    background-size: 400px 400px;
+    background-position: -28px 0;
+    margin: 0 8px;
+  }
+  .main-play-btn {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url("../images/sp_main_m.png") no-repeat center;
+    background-size: 400px 400px;
+    background-position: -55px 0;
+    margin: 0 8px;
+  }
+  .main-banner-left {
+    display: none;
+  }
+  .main-banner-mid {
+    width: 100%;
+    height: 610px;
+    background: rgb(234, 235, 237);
+    margin-bottom: 20px;
+  }
+  .banner {
+    width: 100%;
+    height: 565px;
+  }
+  .main-banner-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 10px;
+  }
+  .weather {
+    width: 50%;
+    height: 50px;
+    padding: 6px 10px 6px 30px;
+  }
+  .temperature {
+    font-size: 1.56vw;
+    line-height: 3.13vw;
+    margin-left: 0.98vw;
+  }
+  .weather button {
+    position: relative;
+    width: 5px;
+    height: 32px;
+    font-size: 0;
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+  }
+  .weather button::after {
+    right: -8px;
+    top: 15px;
+    width: 0px;
+    height: 0px;
+    border-top: 4px solid #353d47;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+  .sw-weather {
+    width: 170px;
+    height: 32px;
+    text-align: start;
+    margin-left: 30px;
+  }
+  .weather-list {
+    font-size: 1.27vw;
+    line-height: 3.13vw;
+  }
+  .weather-list em {
+    font-size: 1.27vw;
+    line-height: 3.13vw;
+  }
+  .weather-level {
+    width: 3.71vw;
+    height: 2.05vw;
+    font-size: 1.27vw;
+    line-height: 1.46vw;
+    border-radius: 1.95vw;
+  }
+  .mayor {
+    width: 50%;
+    height: 190px;
+    background: url("../images/img_mayor_bg_m.png") no-repeat center;
+    background-size: cover;
+  }
+  .mayor-title {
+    width: 50%;
+    margin: 30px 0 10px 15px;
+  }
+  .mayor-links {
+    top: 120px;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    margin-left: 20px;
+  }
+  .mayor-shortcuts {
+    display: inline-block;
+    margin: 0;
+  }
+  .promise-shortcuts {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .mayor-img {
+    right: 5px;
+    width: 196px;
+    height: 236px;
+  }
+  .mayor-img > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-banner-right {
+    height: auto;
+    flex-direction: column;
+  }
+  .weather {
+    width: 100%;
+    border-radius: 50px;
+    padding: 6px 10px 6px 30px;
+  }
+  .temperature {
+    font-size: 16px;
+    line-height: 32px;
+    margin-left: 10px;
+  }
+  .weather button {
+    width: 5px;
+    height: 32px;
+  }
+  .sw-weather {
+    width: 100%;
+    text-align: center;
+  }
+  .weather-list {
+    font-size: 13px;
+    line-height: 32px;
+  }
+  .weather-list em {
+    font-size: 13px;
+    line-height: 32px;
+  }
+  .weather-level {
+    width: 38px;
+    height: 21px;
+    font-size: 13px;
+    line-height: 15px;
+    border-radius: 20px;
+  }
+  .mayor {
+    width: 100%;
+    height: 190px;
+    background-size: 700px;
+    overflow: hidden;
+  }
+  .mayor-title {
+    width: 240px;
+    margin-left: 30px;
+  }
+  .mayor-links {
+    margin-left: 40px;
+  }
+  .mayor-img {
+    position: absolute;
+    width: 215px;
+    height: 260px;
+    right: 60px;
+    bottom: -10px;
+  }
+  .mayor-img > img {
+    width: 100%;
+    height: 100%;
+  }
 }
