@@ -120,3 +120,36 @@
     white-space: nowrap !important;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .quick-menu .inner {
+    overflow-x: scroll;
+  }
+  .quick-menu-list {
+    width: 100%;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .quick-menu-list li {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+  }
+  .quick-menu-list li a {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: rgb(68, 68, 68);
+  }
+  .qm-icon {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .qm-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
