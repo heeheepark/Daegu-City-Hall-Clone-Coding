@@ -548,6 +548,7 @@
     height: 190px;
     background-size: 700px;
     overflow: hidden;
+    margin-bottom: 30px;
   }
   .mayor-title {
     width: 240px;
