@@ -1,8 +1,10 @@
 window.addEventListener("load", function () {
   const swLinks = new Swiper(".sw-links", {
-    slidesPerView: 6,
-    spaceBetween: 0,
+    slidesPerView: "auto",
+    spaceBetween: 10,
     slidesPerGroup: 1,
+    slidesOffsetBefore: 20,
+    slidesOffsetAfter: 20,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -11,6 +13,11 @@ window.addEventListener("load", function () {
     navigation: {
       nextEl: ".links-next-btn",
       prevEl: ".links-prev-btn",
+    },
+    breakpoints: {
+      1400: {
+        slidesPerView: 6, //브라우저가 768보다 클 때
+      },
     },
   });
 
