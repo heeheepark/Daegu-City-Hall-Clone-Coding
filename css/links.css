@@ -99,3 +99,65 @@
     padding: 10px 12px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .links .inner {
+    position: relative;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .btns {
+    width: 100%;
+    height: 44px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(234, 235, 237);
+    padding: 10px 0;
+  }
+  .btns > span {
+    width: 23px;
+    height: 23px;
+    background: url("../images/sp_main_m.png") no-repeat center;
+    background-size: 400px 400px;
+    background-color: #fff;
+    margin-right: 2px;
+  }
+  .btns span:first-child {
+    background-position: -112px 0;
+  }
+  .btns .pause-btn {
+    background-position: -137px 0;
+  }
+  .links-play-btn {
+    background-position: -162px 0 !important;
+  }
+  .btns span:nth-child(3) {
+    background-position: -187px 0;
+  }
+  .btns span:last-child {
+    width: 18px;
+    height: 18px;
+    background-position: -236px 0;
+    background-color: transparent;
+    margin: 6.5px;
+  }
+  .link-swiper {
+    width: 100%;
+    padding-left: 0;
+    padding: 10px 0;
+    overflow: hidden;
+  }
+  .sw-links a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0 3px;
+    padding: 5px 10px;
+    background: rgb(235, 236, 241);
+    color: rgb(68, 68, 68);
+  }
+}

@@ -76,3 +76,9 @@
 .sublist > li:hover > a {
   background: rgb(227, 239, 254);
 }
+
+@media screen and (max-width: 1024px) {
+  .sitemap {
+    display: none;
+  }
+}
